@@ -24,6 +24,12 @@ import {
   Sparkles,
 } from 'lucide-react';
 
+// SukiGroup Color Palette
+// Primary: Slate Gray #475569
+// Secondary: Steel Blue #5b7a9d
+// Accent: Coral Red #dc4e5a
+// Supporting: Sage Green #7a9e84
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -77,14 +83,14 @@ function App() {
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-orange-500 blur-lg opacity-50"></div>
-                <div className="relative w-12 h-12 bg-gradient-to-br from-teal-500 to-orange-600 rounded-lg flex items-center justify-center transform rotate-12">
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-400 to-blue-500 blur-lg opacity-50"></div>
+                <div className="relative w-12 h-12 bg-gradient-to-br from-slate-600 to-blue-700 rounded-lg flex items-center justify-center transform rotate-12">
                   <Building2 className="w-7 h-7 text-white transform -rotate-12" />
                 </div>
               </div>
               <div>
                 <h1 className="text-2xl font-black text-white tracking-tight">FTV Asia</h1>
-                <p className="text-xs text-teal-300 font-medium">Suki Group Company</p>
+                <p className="text-xs text-blue-300 font-medium">Suki Group Company</p>
               </div>
             </div>
 
@@ -95,8 +101,8 @@ function App() {
                   onClick={() => scrollToSection(item.toLowerCase())}
                   className={`text-sm font-semibold transition-all duration-300 ${
                     activeSection === item.toLowerCase()
-                      ? 'text-teal-400'
-                      : 'text-gray-300 hover:text-teal-400'
+                      ? 'text-blue-400'
+                      : 'text-gray-300 hover:text-blue-400'
                   }`}
                 >
                   {item}
@@ -104,7 +110,7 @@ function App() {
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-orange-500 text-white px-6 py-2.5 rounded-full font-bold hover:shadow-xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105"
+                className="group relative overflow-hidden bg-gradient-to-r from-slate-600 to-blue-600 text-white px-6 py-2.5 rounded-full font-bold hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10 flex items-center space-x-2">
                   <span>Get Started</span>
@@ -129,7 +135,7 @@ function App() {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="block w-full text-left px-4 py-3 text-gray-300 hover:bg-slate-700 hover:text-teal-400 rounded-lg transition-all"
+                  className="block w-full text-left px-4 py-3 text-gray-300 hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-all"
                 >
                   {item}
                 </button>
@@ -141,24 +147,24 @@ function App() {
 
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-500/20 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-orange-500/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-500/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-red-500/20 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-500/20 to-orange-500/20 border border-teal-500/30 px-4 py-2 rounded-full">
-                <Sparkles className="w-4 h-4 text-teal-400" />
-                <span className="text-sm font-bold text-teal-400">70+ Years of Excellence</span>
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-500/20 to-blue-500/20 border border-blue-500/30 px-4 py-2 rounded-full">
+                <Sparkles className="w-4 h-4 text-blue-400" />
+                <span className="text-sm font-bold text-blue-400">70+ Years of Excellence</span>
               </div>
 
               <div className="space-y-6">
                 <h1 className="text-6xl lg:text-7xl font-black text-white leading-none">
                   Asian Supply
                   <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-orange-500">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 via-blue-400 to-red-500">
                     Chain Gateway
                   </span>
                 </h1>
@@ -171,7 +177,7 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-orange-500 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105"
+                  className="group relative overflow-hidden bg-gradient-to-r from-slate-600 to-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105"
                 >
                   <span className="relative z-10 flex items-center justify-center space-x-2">
                     <span>Start Partnership</span>
@@ -180,7 +186,7 @@ function App() {
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="border-2 border-teal-400/50 text-teal-400 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-teal-400/10 transition-all duration-300"
+                  className="border-2 border-blue-400/50 text-blue-400 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-blue-400/10 transition-all duration-300"
                 >
                   Explore More
                 </button>
@@ -190,21 +196,21 @@ function App() {
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
                   <div className="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-4">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-400 to-cyan-400">70+</div>
+                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-slate-400 to-blue-400">70+</div>
                     <div className="text-xs text-gray-400 font-medium mt-1">Years Heritage</div>
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
                   <div className="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-4">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-teal-400">5K m²</div>
+                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-red-400 to-slate-400">5K m²</div>
                     <div className="text-xs text-gray-400 font-medium mt-1">Facility Size</div>
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
                   <div className="relative bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-4">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-orange-400">30+</div>
+                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-red-400">30+</div>
                     <div className="text-xs text-gray-400 font-medium mt-1">Containers/Mo</div>
                   </div>
                 </div>
@@ -212,11 +218,11 @@ function App() {
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-teal-500 to-orange-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+              <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-slate-600 to-blue-600 rounded-full opacity-20 blur-3xl animate-pulse"></div>
               <div className="relative space-y-6">
                 <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-14 h-14 bg-gradient-to-br from-slate-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <Globe2 className="w-7 h-7 text-white" />
                     </div>
                     <div>
@@ -227,7 +233,7 @@ function App() {
                 </div>
                 <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-300 translate-x-12">
                   <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-rose-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <Shield className="w-7 h-7 text-white" />
                     </div>
                     <div>
@@ -238,7 +244,7 @@ function App() {
                 </div>
                 <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-slate-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <Zap className="w-7 h-7 text-white" />
                     </div>
                     <div>
@@ -258,14 +264,14 @@ function App() {
       <section id="about" className="relative py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-100 to-orange-100 px-4 py-2 rounded-full mb-6">
-              <Star className="w-4 h-4 text-teal-600" />
-              <span className="text-sm font-bold text-teal-900">The FTV Asia Advantage</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-blue-100 px-4 py-2 rounded-full mb-6">
+              <Star className="w-4 h-4 text-slate-600" />
+              <span className="text-sm font-bold text-slate-900">The FTV Asia Advantage</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Suki Group Excellence
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-orange-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
                 in Asian Markets
               </span>
             </h2>
@@ -280,19 +286,19 @@ function App() {
                 icon: Package,
                 title: 'Retail Logistics',
                 desc: 'Comprehensive logistics optimized for European retail supply chains',
-                color: 'from-teal-500 to-cyan-600',
+                color: 'from-slate-500 to-blue-600',
               },
               {
                 icon: Target,
                 title: 'Product Solutions',
                 desc: 'Innovative sourcing and customization tailored to market demands',
-                color: 'from-orange-500 to-red-600',
+                color: 'from-red-500 to-rose-600',
               },
               {
                 icon: TrendingUp,
                 title: 'Supply Chain',
                 desc: 'End-to-end orchestration with transparency and reliability',
-                color: 'from-cyan-500 to-teal-600',
+                color: 'from-blue-500 to-slate-600',
               },
             ].map((item, idx) => (
               <div
@@ -356,9 +362,9 @@ function App() {
       <section id="services" className="py-32 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-100 to-teal-100 px-4 py-2 rounded-full mb-6">
-              <Container className="w-4 h-4 text-orange-600" />
-              <span className="text-sm font-bold text-orange-900">Our Services</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-100 to-slate-100 px-4 py-2 rounded-full mb-6">
+              <Container className="w-4 h-4 text-red-600" />
+              <span className="text-sm font-bold text-red-900">Our Services</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Integrated Asian
@@ -380,7 +386,7 @@ function App() {
                   'Shanghai market intelligence teams',
                   'MOQ flexibility through consolidation',
                 ],
-                gradient: 'from-teal-500 to-cyan-600',
+                gradient: 'from-slate-500 to-blue-600',
               },
               {
                 icon: Package,
@@ -391,7 +397,7 @@ function App() {
                   'Private labeling with low MOQs',
                   'Semi-automated packing lines',
                 ],
-                gradient: 'from-orange-500 to-red-600',
+                gradient: 'from-red-500 to-rose-600',
               },
               {
                 icon: Truck,
@@ -402,7 +408,7 @@ function App() {
                   'Freight optimization strategies',
                   'X-Dock & Fast Track models',
                 ],
-                gradient: 'from-cyan-500 to-teal-600',
+                gradient: 'from-blue-500 to-slate-600',
               },
               {
                 icon: TestTube,
@@ -434,7 +440,7 @@ function App() {
                   <ul className="space-y-3">
                     {service.items.map((item, i) => (
                       <li key={i} className="flex items-start space-x-3">
-                        <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-slate-600 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -452,8 +458,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-teal-400" />
-              <span className="text-sm font-bold text-teal-400">Solutions</span>
+              <Sparkles className="w-4 h-4 text-blue-400" />
+              <span className="text-sm font-bold text-blue-400">Solutions</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-white mb-6">
               Problems We Solve
@@ -500,9 +506,9 @@ function App() {
                     <p className="text-gray-400 text-sm">Traditional challenge</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4 bg-teal-500/10 rounded-2xl p-4 border border-teal-500/20">
-                  <CheckCircle2 className="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-teal-200 font-medium">{item.solution}</p>
+                <div className="flex items-start space-x-4 bg-green-500/10 rounded-2xl p-4 border border-green-500/20">
+                  <CheckCircle2 className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                  <p className="text-green-200 font-medium">{item.solution}</p>
                 </div>
               </div>
             ))}
@@ -513,14 +519,14 @@ function App() {
       <section id="network" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-100 to-orange-100 px-4 py-2 rounded-full mb-6">
-              <Award className="w-4 h-4 text-teal-600" />
-              <span className="text-sm font-bold text-teal-900">Suki Group Synergies</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-blue-100 px-4 py-2 rounded-full mb-6">
+              <Award className="w-4 h-4 text-slate-600" />
+              <span className="text-sm font-bold text-slate-900">Suki Group Synergies</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Powered by
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-orange-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
                 Suki Group Excellence
               </span>
             </h2>
@@ -528,11 +534,11 @@ function App() {
 
           <div className="grid md:grid-cols-5 gap-6">
             {[
-              { icon: Globe2, title: 'Pan-European Integration', desc: 'Distribution hubs across Europe', gradient: 'from-teal-500 to-cyan-600' },
-              { icon: Users, title: 'Shared Supplier Ecosystem', desc: 'Audited, compliant suppliers', gradient: 'from-orange-500 to-red-600' },
-              { icon: Factory, title: 'Regional Strength', desc: 'Facilities in China & Vietnam', gradient: 'from-cyan-500 to-teal-600' },
+              { icon: Globe2, title: 'Pan-European Integration', desc: 'Distribution hubs across Europe', gradient: 'from-slate-500 to-blue-600' },
+              { icon: Users, title: 'Shared Supplier Ecosystem', desc: 'Audited, compliant suppliers', gradient: 'from-red-500 to-rose-600' },
+              { icon: Factory, title: 'Regional Strength', desc: 'Facilities in China & Vietnam', gradient: 'from-blue-500 to-slate-600' },
               { icon: Truck, title: 'Logistics Optimization', desc: 'Consolidation + hybrid models', gradient: 'from-purple-500 to-pink-600' },
-              { icon: Award, title: 'Proven Reliability', desc: '70+ years of excellence', gradient: 'from-teal-600 to-orange-600' },
+              { icon: Award, title: 'Proven Reliability', desc: '70+ years of excellence', gradient: 'from-slate-600 to-red-600' },
             ].map((synergy, idx) => (
               <div
                 key={idx}
@@ -560,7 +566,7 @@ function App() {
           <h2 className="text-5xl lg:text-6xl font-black text-white mb-8">
             Ready to Transform
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-orange-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-red-500">
               Your Supply Chain?
             </span>
           </h2>
@@ -571,14 +577,14 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
             <a
               href="mailto:contact@ftvasia.com"
-              className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-orange-500 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
+              className="group relative overflow-hidden bg-gradient-to-r from-slate-600 to-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             <button
               onClick={() => scrollToSection('about')}
-              className="border-2 border-teal-400/50 text-teal-400 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-teal-400/10 transition-all duration-300"
+              className="border-2 border-teal-400/50 text-blue-400 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-teal-400/10 transition-all duration-300"
             >
               Learn More
             </button>
@@ -608,14 +614,14 @@ function App() {
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-orange-500 blur-lg opacity-50"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-slate-400 to-red-500 blur-lg opacity-50"></div>
                   <div className="relative w-10 h-10 bg-gradient-to-br from-teal-500 to-orange-600 rounded-lg flex items-center justify-center transform rotate-12">
                     <Building2 className="w-6 h-6 text-white transform -rotate-12" />
                   </div>
                 </div>
                 <div>
                   <h3 className="text-white font-black text-lg">FTV Asia</h3>
-                  <p className="text-xs text-teal-400">Suki Group Company</p>
+                  <p className="text-xs text-blue-400">Suki Group Company</p>
                 </div>
               </div>
               <p className="text-sm leading-relaxed">
@@ -626,10 +632,10 @@ function App() {
             <div>
               <h4 className="text-white font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Strategic Sourcing</li>
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Packaging Solutions</li>
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Supply Chain Management</li>
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Quality Assurance</li>
+                <li className="hover:text-blue-400 transition-colors cursor-pointer">Strategic Sourcing</li>
+                <li className="hover:text-blue-400 transition-colors cursor-pointer">Packaging Solutions</li>
+                <li className="hover:text-blue-400 transition-colors cursor-pointer">Supply Chain Management</li>
+                <li className="hover:text-blue-400 transition-colors cursor-pointer">Quality Assurance</li>
               </ul>
             </div>
 
@@ -656,7 +662,7 @@ function App() {
 
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
             <p>&copy; 2024 FTV Asia. All rights reserved.</p>
-            <p className="mt-4 md:mt-0 text-teal-400 font-semibold">Part of the Suki Group - 70+ Years of Excellence</p>
+            <p className="mt-4 md:mt-0 text-blue-400 font-semibold">Part of the Suki Group - 70+ Years of Excellence</p>
           </div>
         </div>
       </footer>
