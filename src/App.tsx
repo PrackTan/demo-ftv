@@ -242,10 +242,6 @@ function App() {
                         />
                       ))}
                     </div>
-                    <div className="text-sm">
-                      <div className="font-bold text-gray-900">50+ Team</div>
-                      <div className="text-xs text-gray-500">Across Asia</div>
-                    </div>
                   </div>
                 </div>
               </div>
