@@ -595,16 +595,27 @@ function App() {
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="grid grid-cols-2 gap-4">
-                    {[1, 2, 3].map((_, idx) => (
-                      <div
-                        key={idx}
-                        className={`w-32 h-32 bg-gradient-to-br from-slate-600 to-slate-700 rounded-[2rem] flex items-center justify-center ${
-                          idx === 0 ? 'col-span-2 mx-auto' : ''
-                        }`}
-                      >
-                        <Users className="w-16 h-16 text-slate-400" />
-                      </div>
-                    ))}
+                    <div className="col-span-2 mx-auto">
+                      <img
+                        src="/3.png"
+                        alt="Team member"
+                        className="w-36 h-36 object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/4.png"
+                        alt="Team member"
+                        className="w-32 h-32 object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/5.png"
+                        alt="Team member"
+                        className="w-32 h-32 object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -638,16 +649,27 @@ function App() {
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="grid grid-cols-2 gap-4">
-                    {[1, 2, 3].map((_, idx) => (
-                      <div
-                        key={idx}
-                        className={`w-32 h-32 bg-gradient-to-br from-slate-600 to-slate-700 rounded-[2rem] flex items-center justify-center ${
-                          idx === 0 ? 'col-span-2 mx-auto' : ''
-                        }`}
-                      >
-                        <Users className="w-16 h-16 text-slate-400" />
-                      </div>
-                    ))}
+                    <div className="col-span-2 mx-auto">
+                      <img
+                        src="/3.png"
+                        alt="Team member"
+                        className="w-36 h-36 object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/4.png"
+                        alt="Team member"
+                        className="w-32 h-32 object-cover"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/5.png"
+                        alt="Team member"
+                        className="w-32 h-32 object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
