@@ -246,52 +246,108 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="relative py-32 bg-white">
+      <section id="about" className="relative py-32 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 px-4 py-2 rounded-lg mb-6">
-              <Star className="w-4 h-4 text-orange-600" />
-              <span className="text-sm font-semibold text-orange-800">The FTV Asia Advantage</span>
+            <div className="inline-flex items-center space-x-2 bg-gray-800 border border-gray-700 px-4 py-2 rounded-lg mb-6">
+              <Star className="w-4 h-4 text-orange-500" />
+              <span className="text-sm font-semibold text-orange-500">The FTV Asia Advantage</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
+            <h2 className="text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
               Suki Group Excellence
               <br />
               in Asian Markets
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Strategic Asian subsidiary bringing 70+ years of excellence to retail logistics, product solutions, and supply chain management
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-10 mb-24">
-            {[
-              {
-                icon: Package,
-                title: 'Retail Logistics',
-                desc: 'Comprehensive logistics optimized for retail supply chains',
-              },
-              {
-                icon: Target,
-                title: 'Product Solutions',
-                desc: 'Innovative sourcing and customization tailored to market demands',
-              },
-              {
-                icon: TrendingUp,
-                title: 'Supply Chain',
-                desc: 'End-to-end orchestration with transparency and reliability',
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
-              >
-                <div className={`relative w-14 h-14 bg-gray-800 rounded-xl flex items-center justify-center mb-6`}>
-                  <item.icon className="w-7 h-7 text-white" />
+          <div className="mb-24">
+            <h3 className="text-4xl lg:text-5xl font-black text-white mb-12">Europe & Asia Operations</h3>
+
+            <div className="grid lg:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-3xl p-10">
+                <div className="flex items-start gap-6 mb-8">
+                  <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Globe2 className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-3xl font-black text-white mb-2">EUROPE</h4>
+                    <p className="text-lg text-gray-400">Operations</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">{item.desc}</p>
+                <ul className="space-y-4">
+                  {[
+                    'Sourcing & Procurement',
+                    'Logistics & Distribution',
+                    'Sales & Marketing',
+                    'Legal & Sustainability'
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-center text-white">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mr-4"></div>
+                      <span className="text-base">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
+
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-3xl p-10">
+                <div className="flex items-start gap-6 mb-8">
+                  <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-8 h-8 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-3xl font-black text-white mb-2">ASIA</h4>
+                    <p className="text-lg text-gray-400">Operations</p>
+                  </div>
+                </div>
+                <ul className="space-y-4">
+                  {[
+                    'Role',
+                    'Regional Sourcing',
+                    'Local Manufacturing',
+                    'Market Expansion'
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-center text-white">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mr-4"></div>
+                      <span className="text-base">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: Globe2,
+                  title: 'Global Network',
+                  desc: 'Asia-Europe supply chain integration',
+                  color: 'from-gray-700 to-gray-800'
+                },
+                {
+                  icon: Shield,
+                  title: 'ISO Certified',
+                  desc: 'BSCI & CBAM compliant quality',
+                  color: 'from-gray-700 to-gray-800'
+                },
+                {
+                  icon: Zap,
+                  title: 'Fast Logistics',
+                  desc: 'X-Dock & Fast Track models',
+                  color: 'from-gray-700 to-gray-800'
+                }
+              ].map((item, idx) => (
+                <div key={idx} className={`bg-gradient-to-br ${item.color} border border-gray-600 rounded-2xl p-8 hover:border-gray-500 transition-all`}>
+                  <div className="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-6">
+                    <item.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h4 className="text-lg font-black text-white mb-2">{item.title}</h4>
+                  <p className="text-sm text-blue-400">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -332,23 +388,6 @@ function App() {
             ))}
           </div>
 
-          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              { icon: Award, label: 'ISO Certified', color: 'green' },
-              { icon: Shield, label: 'BSCI Compliant', color: 'orange' },
-              { icon: Globe2, label: 'Pan-European', color: 'blue' },
-              { icon: TrendingUp, label: '70+ Years', color: 'green' },
-            ].map((cert, idx) => (
-              <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-all text-center">
-                <cert.icon className={`w-10 h-10 ${
-                  cert.color === 'green' ? 'text-green-600' :
-                  cert.color === 'orange' ? 'text-orange-600' :
-                  'text-blue-600'
-                } mx-auto mb-4`} />
-                <div className="text-sm font-bold text-gray-900">{cert.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
