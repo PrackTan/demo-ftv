@@ -281,38 +281,41 @@ function App() {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-20">
-            {[
-              {
-                icon: Package,
-                title: 'Retail Logistics',
-                desc: 'Comprehensive logistics optimized for European retail supply chains',
-                color: 'from-slate-500 to-blue-600',
-              },
-              {
-                icon: Target,
-                title: 'Product Solutions',
-                desc: 'Innovative sourcing and customization tailored to market demands',
-                color: 'from-red-500 to-rose-600',
-              },
-              {
-                icon: TrendingUp,
-                title: 'Supply Chain',
-                desc: 'End-to-end orchestration with transparency and reliability',
-                color: 'from-blue-500 to-slate-600',
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-              >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-teal-400/10 to-transparent rounded-full blur-2xl group-hover:blur-3xl transition-all"></div>
-                <div className={`relative w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all`}>
-                  <item.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                <span className="text-3xl">🇨🇳</span>
               </div>
-            ))}
+              <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
+              <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                *Sourcing, Purchasing và "Quản lý Nhà cung cấp" cho khu vực Châu Á. Hỗ trợ phát
+                đuổi tới từ procurement và xuấy tử xảu. Hoạn thực xuất ưu ưrn.
+              </p>
+            </div>
+
+            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                <Factory className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
+              <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                *Nhà máy đống gào đó-xhyền cho Hardware and Fasteners. Vận hành Văn thận wich chấn
+                ISO 9001, BSCI để đảm bảu quảng hậu quặng hầu.
+              </p>
+            </div>
+
+            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                <span className="text-3xl">🇻🇳</span>
+              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
+              <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                *Nhà máy tại KCN Bình Dương, chiền giáo Screws, Bolts, Washers. Hiếu khấn khén
+                wah thống phá dủa (an tất-clamping duties).
+              </p>
+            </div>
           </div>
 
           <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-[3rem] p-12 overflow-hidden">
