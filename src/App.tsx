@@ -205,38 +205,46 @@ function App() {
               </div>
             </div>
 
-            <div className="relative hidden lg:block">
-              <div className="relative space-y-6">
-                <div className="bg-white border border-gray-200 shadow-lg rounded-3xl p-8 transform hover:scale-105 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gray-800 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Globe2 className="w-7 h-7 text-white" />
+            <div className="relative hidden lg:flex justify-center items-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-400/20 to-emerald-400/20 rounded-full blur-3xl"></div>
+
+                <div className="relative grid grid-cols-2 gap-6">
+                  {[
+                    { icon: Users, color: 'from-green-500 to-emerald-600', position: 'col-start-1' },
+                    { icon: Globe2, color: 'from-blue-500 to-sky-600', position: 'col-start-2' },
+                    { icon: Package, color: 'from-orange-500 to-red-600', position: 'col-start-1' },
+                    { icon: Factory, color: 'from-green-600 to-teal-700', position: 'col-start-2' },
+                    { icon: Truck, color: 'from-blue-600 to-indigo-700', position: 'col-start-1' },
+                    { icon: Award, color: 'from-orange-600 to-amber-700', position: 'col-start-2' },
+                  ].map((item, idx) => (
+                    <div
+                      key={idx}
+                      className={`${item.position} transform hover:scale-110 transition-all duration-300`}
+                      style={{
+                        clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
+                      }}
+                    >
+                      <div className={`w-32 h-32 bg-gradient-to-br ${item.color} flex items-center justify-center shadow-2xl`}>
+                        <item.icon className="w-14 h-14 text-white" />
+                      </div>
                     </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900 mb-2">Global Network</div>
-                      <div className="text-sm text-gray-600">Asia-Europe supply chain integration</div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-                <div className="bg-white border border-gray-200 shadow-lg rounded-3xl p-8 transform hover:scale-105 transition-all duration-300 translate-x-12">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gray-700 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Shield className="w-7 h-7 text-white" />
+
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white border border-gray-200 shadow-xl rounded-2xl px-6 py-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="flex -space-x-2">
+                      {[1, 2, 3].map((i) => (
+                        <div
+                          key={i}
+                          className="w-8 h-8 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 border-2 border-white"
+                        />
+                      ))}
                     </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900 mb-2">ISO Certified</div>
-                      <div className="text-sm text-gray-600">BSCI & CBAM compliant quality</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-white border border-gray-200 shadow-lg rounded-3xl p-8 transform hover:scale-105 transition-all duration-300">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gray-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Zap className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900 mb-2">Fast Logistics</div>
-                      <div className="text-sm text-gray-600">X-Dock & Fast Track models</div>
+                    <div className="text-sm">
+                      <div className="font-bold text-gray-900">50+ Team</div>
+                      <div className="text-xs text-gray-500">Across Asia</div>
                     </div>
                   </div>
                 </div>
