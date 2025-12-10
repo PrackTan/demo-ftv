@@ -103,7 +103,7 @@ function App() {
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="group relative overflow-hidden bg-gray-900 text-white px-6 py-2.5 rounded-full font-bold hover:shadow-xl hover:shadow-gray-500/30 transition-all duration-300 hover:scale-105"
+                className="group relative overflow-hidden bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-2.5 rounded-full font-bold hover:shadow-xl hover:shadow-green-500/30 transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10 flex items-center space-x-2">
                   <span>Get Started</span>
@@ -146,9 +146,9 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center space-x-2 bg-white border border-gray-300 px-4 py-2 rounded-full shadow-sm">
-                <Sparkles className="w-4 h-4 text-gray-700" />
-                <span className="text-sm font-bold text-gray-800">70+ Years of Excellence</span>
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 px-4 py-2 rounded-full shadow-sm">
+                <Sparkles className="w-4 h-4 text-green-600" />
+                <span className="text-sm font-bold text-green-800">70+ Years of Excellence</span>
               </div>
 
               <div className="space-y-6">
@@ -168,7 +168,7 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="group relative overflow-hidden bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-gray-500/30 transition-all duration-300 hover:scale-105"
+                  className="group relative overflow-hidden bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-green-500/30 transition-all duration-300 hover:scale-105"
                 >
                   <span className="relative z-10 flex items-center justify-center space-x-2">
                     <span>Start Partnership</span>
@@ -177,7 +177,7 @@ function App() {
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-100 transition-all duration-300"
+                  className="border-2 border-green-500 text-green-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-green-50 transition-all duration-300"
                 >
                   Explore More
                 </button>
@@ -249,9 +249,9 @@ function App() {
       <section id="about" className="relative py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg mb-6">
-              <Star className="w-4 h-4 text-gray-600" />
-              <span className="text-sm font-semibold text-gray-700">The FTV Asia Advantage</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 px-4 py-2 rounded-lg mb-6">
+              <Star className="w-4 h-4 text-orange-600" />
+              <span className="text-sm font-semibold text-orange-800">The FTV Asia Advantage</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
               Suki Group Excellence
@@ -294,44 +294,60 @@ function App() {
             ))}
           </div>
 
-          <div className="relative bg-gray-100 rounded-3xl p-12 lg:p-16 overflow-hidden">
-            <div className="relative grid lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h3 className="text-3xl lg:text-4xl font-black text-gray-900 mb-10">Strategic Asian Presence</h3>
-                <div className="space-y-8">
-                  {[
-                    { icon: MapPin, title: 'Asia Sourcing & Buying Office', location: 'Shanghai, China', desc: 'Founded Sep 2019' },
-                    { icon: Factory, title: 'China Packing Factory', location: 'Kunshan City, Jiaxing', desc: '8,000 m² facility' },
-                    { icon: Factory, title: 'Vietnam Packing Factory', location: 'Ho Chi Minh City', desc: '3,000 m² facility' },
-                  ].map((loc, idx) => (
-                    <div key={idx} className="flex items-start space-x-5 group">
-                      <div className={`w-14 h-14 bg-gray-300 rounded-xl flex items-center justify-center flex-shrink-0`}>
-                        <loc.icon className={`w-7 h-7 text-gray-700`} />
-                      </div>
-                      <div>
-                        <div className="text-lg font-bold text-gray-900 mb-1">{loc.title}</div>
-                        <p className="text-gray-700 text-sm font-medium">{loc.location}</p>
-                        <p className="text-gray-500 text-xs mt-1">{loc.desc}</p>
-                      </div>
-                    </div>
-                  ))}
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[
+              {
+                flag: '🇨🇳',
+                title: 'Asia Sourcing & Buying Office',
+                location: 'Shanghai, China (Founded Sep 2019)',
+                desc: 'Sourcing, Purchasing và Quản lý Nhà cung ứng cho khu vực Châu Á. Hỗ trợ phát triển sản phẩm và xử lý tất cả Hoàn thuế xuất xưỡm.',
+                bgColor: 'from-green-50 to-emerald-50',
+                iconBg: 'bg-gradient-to-br from-green-500 to-emerald-600'
+              },
+              {
+                flag: '🇨🇳',
+                title: 'China Packing Factory',
+                location: 'Kunshan City, Jiaxing (8,000 m²)',
+                desc: 'Nhà máy đóng gói 60+ chuyên cho Hardware and Fasteners. Vận hành Vận hành wich chuẩn ISO 9001, BSCI để đảm bảo chương hạo.',
+                bgColor: 'from-orange-50 to-red-50',
+                iconBg: 'bg-gradient-to-br from-orange-500 to-red-600'
+              },
+              {
+                flag: '🇻🇳',
+                title: 'Vietnam Packing Factory',
+                location: 'Ho Minh City (3,000 m²)',
+                desc: 'Nhà máy tại KCN Bình Dương, chuyên sản xuất Screws, Bolts, Washers. Hiện khẳn khận với thông phá địa (anti ct- dumping duties).',
+                bgColor: 'from-blue-50 to-sky-50',
+                iconBg: 'bg-gradient-to-br from-blue-500 to-sky-600'
+              },
+            ].map((loc, idx) => (
+              <div key={idx} className={`relative bg-gradient-to-br ${loc.bgColor} border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all duration-300`}>
+                <div className={`w-16 h-16 ${loc.iconBg} rounded-2xl flex items-center justify-center mb-6 shadow-lg text-3xl`}>
+                  {loc.flag}
                 </div>
+                <h3 className="text-xl font-black text-gray-900 mb-3 leading-tight">{loc.title}</h3>
+                <p className="text-sm font-semibold text-gray-700 mb-4">{loc.location}</p>
+                <p className="text-sm text-gray-600 leading-relaxed">{loc.desc}</p>
               </div>
+            ))}
+          </div>
 
-              <div className="grid grid-cols-2 gap-5">
-                {[
-                  { icon: Award, label: 'ISO\nCertified' },
-                  { icon: Shield, label: 'BSCI\nCompliant' },
-                  { icon: Globe2, label: 'Pan-European\nNetwork' },
-                  { icon: TrendingUp, label: '70+ Years\nExcellence' },
-                ].map((cert, idx) => (
-                  <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-all text-center">
-                    <cert.icon className={`w-10 h-10 text-gray-700 mx-auto mb-4`} />
-                    <div className="text-sm font-bold text-gray-900 whitespace-pre-line leading-tight">{cert.label}</div>
-                  </div>
-                ))}
+          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { icon: Award, label: 'ISO Certified', color: 'green' },
+              { icon: Shield, label: 'BSCI Compliant', color: 'orange' },
+              { icon: Globe2, label: 'Pan-European', color: 'blue' },
+              { icon: TrendingUp, label: '70+ Years', color: 'green' },
+            ].map((cert, idx) => (
+              <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-all text-center">
+                <cert.icon className={`w-10 h-10 ${
+                  cert.color === 'green' ? 'text-green-600' :
+                  cert.color === 'orange' ? 'text-orange-600' :
+                  'text-blue-600'
+                } mx-auto mb-4`} />
+                <div className="text-sm font-bold text-gray-900">{cert.label}</div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -339,9 +355,9 @@ function App() {
       <section id="services" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white border border-gray-300 px-4 py-2 rounded-full mb-6 shadow-sm">
-              <Container className="w-4 h-4 text-gray-700" />
-              <span className="text-sm font-bold text-gray-800">Our Services</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 px-4 py-2 rounded-full mb-6 shadow-sm">
+              <Container className="w-4 h-4 text-blue-600" />
+              <span className="text-sm font-bold text-blue-800">Our Services</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Integrated Asian
@@ -427,9 +443,9 @@ function App() {
       <section id="solutions" className="py-32 bg-gray-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white border border-gray-300 px-4 py-2 rounded-full mb-6 shadow-sm">
-              <Sparkles className="w-4 h-4 text-gray-700" />
-              <span className="text-sm font-bold text-gray-800">Solutions</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 px-4 py-2 rounded-full mb-6 shadow-sm">
+              <Sparkles className="w-4 h-4 text-green-600" />
+              <span className="text-sm font-bold text-green-800">Solutions</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Problems We Solve
@@ -489,9 +505,9 @@ function App() {
       <section id="network" className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white border border-gray-300 px-4 py-2 rounded-full mb-6 shadow-sm">
-              <Award className="w-4 h-4 text-gray-700" />
-              <span className="text-sm font-bold text-gray-800">Suki Group Synergies</span>
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 px-4 py-2 rounded-full mb-6 shadow-sm">
+              <Award className="w-4 h-4 text-orange-600" />
+              <span className="text-sm font-bold text-orange-800">Suki Group Synergies</span>
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Powered by
@@ -541,14 +557,14 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
             <a
               href="mailto:contact@ftvasia.com"
-              className="group relative overflow-hidden bg-gray-900 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-gray-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
+              className="group relative overflow-hidden bg-gradient-to-r from-green-600 to-emerald-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-green-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             <button
               onClick={() => scrollToSection('about')}
-              className="border-2 border-gray-300 text-gray-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-100 transition-all duration-300"
+              className="border-2 border-green-500 text-green-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-green-50 transition-all duration-300"
             >
               Learn More
             </button>
