@@ -231,11 +231,6 @@ function App() {
                     </div>
                   ))}
                 </div>
-
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white border border-gray-200 shadow-xl rounded-2xl px-6 py-3">
-                  <div className="flex items-center space-x-3">
-                  </div>
-                </div>
               </div>
             </div>
           </div>
