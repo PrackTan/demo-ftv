@@ -246,31 +246,29 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="relative py-32 bg-gray-50">
+      <section id="about" className="relative py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white border border-gray-300 px-4 py-2 rounded-full mb-6 shadow-sm">
-              <Star className="w-4 h-4 text-gray-700" />
-              <span className="text-sm font-bold text-gray-800">The FTV Asia Advantage</span>
+            <div className="inline-flex items-center space-x-2 bg-gray-100 px-4 py-2 rounded-lg mb-6">
+              <Star className="w-4 h-4 text-gray-600" />
+              <span className="text-sm font-semibold text-gray-700">The FTV Asia Advantage</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
               Suki Group Excellence
               <br />
-              <span className="text-gray-600">
-                in Asian Markets
-              </span>
+              in Asian Markets
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Strategic Asian subsidiary bringing 70+ years of European excellence to retail logistics, product solutions, and supply chain management
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Strategic Asian subsidiary bringing 70+ years of excellence to retail logistics, product solutions, and supply chain management
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-20">
+          <div className="grid lg:grid-cols-3 gap-10 mb-24">
             {[
               {
                 icon: Package,
                 title: 'Retail Logistics',
-                desc: 'Comprehensive logistics optimized for European retail supply chains',
+                desc: 'Comprehensive logistics optimized for retail supply chains',
               },
               {
                 icon: Target,
@@ -285,50 +283,51 @@ function App() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="group relative bg-white border border-gray-200 shadow-md rounded-3xl p-8 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+                className="group relative bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
               >
-                <div className={`relative w-16 h-16 bg-gray-800 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all`}>
-                  <item.icon className="w-8 h-8 text-white" />
+                <div className={`relative w-14 h-14 bg-gray-800 rounded-xl flex items-center justify-center mb-6`}>
+                  <item.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="relative bg-gray-800 rounded-[3rem] p-12 overflow-hidden shadow-xl">
-            <div className="relative grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative bg-gray-100 rounded-3xl p-12 lg:p-16 overflow-hidden">
+            <div className="relative grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h3 className="text-4xl font-black text-white mb-8">Strategic Asian Presence</h3>
-                <div className="space-y-6">
+                <h3 className="text-3xl lg:text-4xl font-black text-gray-900 mb-10">Strategic Asian Presence</h3>
+                <div className="space-y-8">
                   {[
-                    { icon: MapPin, title: 'Hong Kong HQ', desc: 'Strategic hub connecting East and West' },
-                    { icon: Search, title: 'Shanghai Sourcing', desc: 'Market intelligence for fasteners, tools, adhesives' },
-                    { icon: Factory, title: 'Packing Centers', desc: 'Jiaxing 5,000m² & Ho Chi Minh 30 containers/mo' },
+                    { icon: MapPin, title: 'Asia Sourcing & Buying Office', location: 'Shanghai, China', desc: 'Founded Sep 2019' },
+                    { icon: Factory, title: 'China Packing Factory', location: 'Kunshan City, Jiaxing', desc: '8,000 m² facility' },
+                    { icon: Factory, title: 'Vietnam Packing Factory', location: 'Ho Chi Minh City', desc: '3,000 m² facility' },
                   ].map((loc, idx) => (
-                    <div key={idx} className="flex items-start space-x-4 group">
-                      <div className={`w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                        <loc.icon className={`w-6 h-6 text-gray-300`} />
+                    <div key={idx} className="flex items-start space-x-5 group">
+                      <div className={`w-14 h-14 bg-gray-300 rounded-xl flex items-center justify-center flex-shrink-0`}>
+                        <loc.icon className={`w-7 h-7 text-gray-700`} />
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-white mb-1">{loc.title}</div>
-                        <p className="text-gray-400 text-sm">{loc.desc}</p>
+                        <div className="text-lg font-bold text-gray-900 mb-1">{loc.title}</div>
+                        <p className="text-gray-700 text-sm font-medium">{loc.location}</p>
+                        <p className="text-gray-500 text-xs mt-1">{loc.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-5">
                 {[
-                  { icon: Award, label: 'ISO Certified' },
-                  { icon: Shield, label: 'BSCI' },
-                  { icon: Globe2, label: 'Pan-European' },
-                  { icon: TrendingUp, label: 'Financial Stability' },
+                  { icon: Award, label: 'ISO\nCertified' },
+                  { icon: Shield, label: 'BSCI\nCompliant' },
+                  { icon: Globe2, label: 'Pan-European\nNetwork' },
+                  { icon: TrendingUp, label: '70+ Years\nExcellence' },
                 ].map((cert, idx) => (
-                  <div key={idx} className="bg-gray-700 border border-gray-600 rounded-2xl p-6 hover:bg-gray-600 transition-all group">
-                    <cert.icon className={`w-10 h-10 text-gray-300 mb-4 group-hover:scale-110 transition-transform`} />
-                    <div className="text-lg font-bold text-white">{cert.label}</div>
+                  <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-gray-300 transition-all text-center">
+                    <cert.icon className={`w-10 h-10 text-gray-700 mx-auto mb-4`} />
+                    <div className="text-sm font-bold text-gray-900 whitespace-pre-line leading-tight">{cert.label}</div>
                   </div>
                 ))}
               </div>
