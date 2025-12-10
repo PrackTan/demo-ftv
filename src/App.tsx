@@ -220,40 +220,12 @@ function App() {
 
             <div className="relative hidden lg:block">
               <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-teal-300 to-cyan-300 rounded-full opacity-30 blur-3xl animate-pulse"></div>
-              <div className="relative space-y-6">
-                <div className="bg-white/80 backdrop-blur-xl border border-teal-100 rounded-3xl p-8 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Globe2 className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900 mb-2">Global Network</div>
-                      <div className="text-sm text-gray-600">Asia-Europe supply chain integration</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-white/80 backdrop-blur-xl border border-green-100 rounded-3xl p-8 transform hover:scale-105 transition-all duration-300 translate-x-12 shadow-lg">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Shield className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900 mb-2">ISO Certified</div>
-                      <div className="text-sm text-gray-600">BSCI & CBAM compliant quality</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-white/80 backdrop-blur-xl border border-cyan-100 rounded-3xl p-8 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center flex-shrink-0">
-                      <Zap className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900 mb-2">Fast Logistics</div>
-                      <div className="text-sm text-gray-600">X-Dock & Fast Track models</div>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative">
+                <img
+                  src="/image copy.png"
+                  alt="Europe & Asia Operations"
+                  className="w-full h-auto rounded-3xl shadow-2xl"
+                />
               </div>
             </div>
           </div>
