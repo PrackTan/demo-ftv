@@ -319,13 +319,13 @@ function App() {
             </div>
           </div>
 
-          <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-[3rem] p-12 overflow-hidden">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-teal-500/20 to-transparent rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-orange-500/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white rounded-[3rem] p-12 overflow-hidden border-2 border-gray-200 shadow-lg">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
 
             <div className="relative grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-4xl font-black text-white mb-8">Strategic Asian Presence</h3>
+                <h3 className="text-4xl font-black text-gray-900 mb-8">Strategic Asian Presence</h3>
                 <div className="space-y-6">
                   {[
                     { icon: MapPin, title: 'Hong Kong HQ', desc: 'Strategic hub connecting East and West', color: 'teal' },
@@ -333,12 +333,12 @@ function App() {
                     { icon: Factory, title: 'Packing Centers', desc: 'Jiaxing 5,000m² & Ho Chi Minh 30 containers/mo', color: 'cyan' },
                   ].map((loc, idx) => (
                     <div key={idx} className="flex items-start space-x-4 group">
-                      <div className={`w-12 h-12 bg-${loc.color}-500/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                        <loc.icon className={`w-6 h-6 text-${loc.color}-400`} />
+                      <div className={`w-12 h-12 bg-${loc.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                        <loc.icon className={`w-6 h-6 text-${loc.color}-600`} />
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-white mb-1">{loc.title}</div>
-                        <p className="text-gray-400 text-sm">{loc.desc}</p>
+                        <div className="text-lg font-bold text-gray-900 mb-1">{loc.title}</div>
+                        <p className="text-gray-600 text-sm">{loc.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -352,9 +352,9 @@ function App() {
                   { icon: Globe2, label: 'Pan-European', color: 'cyan' },
                   { icon: TrendingUp, label: 'Financial Stability', color: 'teal' },
                 ].map((cert, idx) => (
-                  <div key={idx} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all group">
-                    <cert.icon className={`w-10 h-10 text-${cert.color}-400 mb-4 group-hover:scale-110 transition-transform`} />
-                    <div className="text-lg font-bold text-white">{cert.label}</div>
+                  <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all group">
+                    <cert.icon className={`w-10 h-10 text-${cert.color}-600 mb-4 group-hover:scale-110 transition-transform`} />
+                    <div className="text-lg font-bold text-gray-900">{cert.label}</div>
                   </div>
                 ))}
               </div>
@@ -456,19 +456,19 @@ function App() {
         </div>
       </section>
 
-      <section id="solutions" className="py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
+      <section id="solutions" className="py-32 bg-gradient-to-br from-gray-100 via-gray-50 to-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-teal-400" />
-              <span className="text-sm font-bold text-teal-400">Solutions</span>
+            <div className="inline-flex items-center space-x-2 bg-white border border-teal-200 px-4 py-2 rounded-full mb-6 shadow-sm">
+              <Sparkles className="w-4 h-4 text-teal-600" />
+              <span className="text-sm font-bold text-teal-600">Solutions</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-white mb-6">
+            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Problems We Solve
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Turning supply chain challenges into competitive advantages
             </p>
           </div>
@@ -500,19 +500,19 @@ function App() {
                 solution: 'We coordinate suppliers, production, and logistics under one partner',
               },
             ].map((item, idx) => (
-              <div key={idx} className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all">
+              <div key={idx} className="group bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all">
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-10 h-10 bg-red-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <X className="w-5 h-5 text-red-400" />
+                  <div className="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <X className="w-5 h-5 text-red-600" />
                   </div>
                   <div>
-                    <div className="text-lg font-bold text-white mb-1">{item.problem}</div>
-                    <p className="text-gray-400 text-sm">Traditional challenge</p>
+                    <div className="text-lg font-bold text-gray-900 mb-1">{item.problem}</div>
+                    <p className="text-gray-500 text-sm">Traditional challenge</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4 bg-green-500/10 rounded-2xl p-4 border border-green-500/20">
-                  <CheckCircle2 className="w-5 h-5 text-teal-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-green-200 font-medium">{item.solution}</p>
+                <div className="flex items-start space-x-4 bg-green-50 rounded-2xl p-4 border border-green-200">
+                  <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-green-800 font-medium">{item.solution}</p>
                 </div>
               </div>
             ))}
@@ -560,10 +560,10 @@ function App() {
         </div>
       </section>
 
-      <section id="operations" className="py-32 bg-[#0a1628]">
+      <section id="operations" className="py-32 bg-gradient-to-br from-gray-50 via-white to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl lg:text-6xl font-black text-white mb-6">
+            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Europe & Asia
               <br />
               Operations
@@ -571,16 +571,16 @@ function App() {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-[#0d1d35] border-2 border-slate-700/50 rounded-3xl p-12">
+            <div className="bg-white border-2 border-gray-200 rounded-3xl p-12 shadow-lg">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <div className="flex items-center space-x-4 mb-8">
-                    <div className="w-24 h-24 bg-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-24 h-24 bg-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
                       <Globe2 className="w-12 h-12 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-4xl font-black text-white tracking-wide">EUROPE</h3>
-                      <p className="text-2xl text-gray-300 font-light">Operations</p>
+                      <h3 className="text-4xl font-black text-gray-900 tracking-wide">EUROPE</h3>
+                      <p className="text-2xl text-gray-600 font-light">Operations</p>
                     </div>
                   </div>
                   <ul className="space-y-4">
@@ -591,8 +591,8 @@ function App() {
                       'Legal & Sustainability',
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
-                        <span className="text-xl text-white font-light">{item}</span>
+                        <div className="w-2 h-2 bg-teal-600 rounded-full flex-shrink-0"></div>
+                        <span className="text-xl text-gray-700 font-light">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -625,16 +625,16 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-[#0d1d35] border-2 border-slate-700/50 rounded-3xl p-12">
+            <div className="bg-white border-2 border-gray-200 rounded-3xl p-12 shadow-lg">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <div className="flex items-center space-x-4 mb-8">
-                    <div className="w-24 h-24 bg-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-24 h-24 bg-teal-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
                       <MapPin className="w-12 h-12 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-4xl font-black text-white tracking-wide">ASIA</h3>
-                      <p className="text-2xl text-gray-300 font-light">Operations</p>
+                      <h3 className="text-4xl font-black text-gray-900 tracking-wide">ASIA</h3>
+                      <p className="text-2xl text-gray-600 font-light">Operations</p>
                     </div>
                   </div>
                   <ul className="space-y-4">
@@ -645,8 +645,8 @@ function App() {
                       'Market Expansion',
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
-                        <span className="text-xl text-white font-light">{item}</span>
+                        <div className="w-2 h-2 bg-teal-600 rounded-full flex-shrink-0"></div>
+                        <span className="text-xl text-gray-700 font-light">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -682,35 +682,35 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="relative py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+      <section id="contact" className="relative py-32 bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-500/20 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-orange-500/20 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-5xl lg:text-6xl font-black text-white mb-8">
+          <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-8">
             Ready to Transform
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
               Your Supply Chain?
             </span>
           </h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
             Partner with FTV Asia to unify your Asian sourcing under the Suki Group's legacy of excellence. Let's build smarter, faster, and more reliable supply chains together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
             <a
               href="mailto:contact@ftvasia.com"
-              className="group relative overflow-hidden bg-gradient-to-r from-slate-600 to-teal-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
+              className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             <button
               onClick={() => scrollToSection('about')}
-              className="border-2 border-teal-400/50 text-teal-400 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-teal-400/10 transition-all duration-300"
+              className="border-2 border-teal-500 text-teal-600 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-teal-50 transition-all duration-300"
             >
               Learn More
             </button>
@@ -722,32 +722,32 @@ function App() {
               { icon: Building2, title: 'Facilities', desc: 'China & Vietnam', color: 'orange' },
               { icon: Globe2, title: 'Network', desc: 'Asia to Europe', color: 'cyan' },
             ].map((loc, idx) => (
-              <div key={idx} className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6">
-                <div className={`w-14 h-14 bg-${loc.color}-500/20 rounded-xl flex items-center justify-center mx-auto mb-4`}>
-                  <loc.icon className={`w-7 h-7 text-${loc.color}-400`} />
+              <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+                <div className={`w-14 h-14 bg-${loc.color}-100 rounded-xl flex items-center justify-center mx-auto mb-4`}>
+                  <loc.icon className={`w-7 h-7 text-${loc.color}-600`} />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{loc.title}</h3>
-                <p className="text-gray-400">{loc.desc}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{loc.title}</h3>
+                <p className="text-gray-600">{loc.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <footer className="bg-slate-900 text-gray-400 py-16 px-4 border-t border-slate-800">
+      <footer className="bg-gray-100 text-gray-600 py-16 px-4 border-t border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-slate-400 to-red-500 blur-lg opacity-50"></div>
-                  <div className="relative w-10 h-10 bg-gradient-to-br from-teal-500 to-orange-600 rounded-lg flex items-center justify-center transform rotate-12">
+                  <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-cyan-400 blur-lg opacity-30"></div>
+                  <div className="relative w-10 h-10 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center transform rotate-12">
                     <Building2 className="w-6 h-6 text-white transform -rotate-12" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-white font-black text-lg">FTV Asia</h3>
-                  <p className="text-xs text-teal-400">Suki Group Company</p>
+                  <h3 className="text-gray-900 font-black text-lg">FTV Asia</h3>
+                  <p className="text-xs text-teal-600">Suki Group Company</p>
                 </div>
               </div>
               <p className="text-sm leading-relaxed">
@@ -756,17 +756,17 @@ function App() {
             </div>
 
             <div>
-              <h4 className="text-white font-bold mb-4">Services</h4>
+              <h4 className="text-gray-900 font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Strategic Sourcing</li>
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Packaging Solutions</li>
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Supply Chain Management</li>
-                <li className="hover:text-teal-400 transition-colors cursor-pointer">Quality Assurance</li>
+                <li className="hover:text-teal-600 transition-colors cursor-pointer">Strategic Sourcing</li>
+                <li className="hover:text-teal-600 transition-colors cursor-pointer">Packaging Solutions</li>
+                <li className="hover:text-teal-600 transition-colors cursor-pointer">Supply Chain Management</li>
+                <li className="hover:text-teal-600 transition-colors cursor-pointer">Quality Assurance</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-white font-bold mb-4">Locations</h4>
+              <h4 className="text-gray-900 font-bold mb-4">Locations</h4>
               <ul className="space-y-2 text-sm">
                 <li>Hong Kong (HQ)</li>
                 <li>Shanghai, China</li>
@@ -776,7 +776,7 @@ function App() {
             </div>
 
             <div>
-              <h4 className="text-white font-bold mb-4">Certifications</h4>
+              <h4 className="text-gray-900 font-bold mb-4">Certifications</h4>
               <ul className="space-y-2 text-sm">
                 <li>ISO Certified</li>
                 <li>BSCI Compliant</li>
@@ -786,9 +786,9 @@ function App() {
             </div>
           </div>
 
-          <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+          <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
             <p>&copy; 2024 FTV Asia. All rights reserved.</p>
-            <p className="mt-4 md:mt-0 text-teal-400 font-semibold">Part of the Suki Group - 70+ Years of Excellence</p>
+            <p className="mt-4 md:mt-0 text-teal-600 font-semibold">Part of the Suki Group - 70+ Years of Excellence</p>
           </div>
         </div>
       </footer>
