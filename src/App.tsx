@@ -234,14 +234,6 @@ function App() {
 
                 <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-white border border-gray-200 shadow-xl rounded-2xl px-6 py-3">
                   <div className="flex items-center space-x-3">
-                    <div className="flex -space-x-2">
-                      {[1, 2, 3].map((i) => (
-                        <div
-                          key={i}
-                          className="w-8 h-8 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 border-2 border-white"
-                        />
-                      ))}
-                    </div>
                   </div>
                 </div>
               </div>
