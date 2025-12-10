@@ -95,7 +95,7 @@ function App() {
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
-              {['About', 'Services', 'Solutions', 'Network', 'Contact'].map(item => (
+              {['About', 'Services', 'Solutions', 'Network', 'Operations', 'Contact'].map(item => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -131,7 +131,7 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden bg-slate-800 border-t border-slate-700">
             <div className="px-4 py-4 space-y-3">
-              {['About', 'Services', 'Solutions', 'Network', 'Contact'].map(item => (
+              {['About', 'Services', 'Solutions', 'Network', 'Operations', 'Contact'].map(item => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -552,6 +552,106 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="operations" className="py-32 bg-[#0a1628]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl lg:text-6xl font-black text-white mb-6">
+              Europe & Asia
+              <br />
+              Operations
+            </h2>
+          </div>
+
+          <div className="space-y-8">
+            <div className="bg-[#0d1d35] border-2 border-slate-700/50 rounded-3xl p-12">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="flex items-center space-x-4 mb-8">
+                    <div className="w-24 h-24 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                      <Globe2 className="w-12 h-12 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-4xl font-black text-white tracking-wide">EUROPE</h3>
+                      <p className="text-2xl text-gray-300 font-light">Operations</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      'Sourcing & Procurement',
+                      'Logistics & Distribution',
+                      'Sales & Marketing',
+                      'Legal & Sustainability',
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
+                        <span className="text-xl text-white font-light">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="grid grid-cols-2 gap-4">
+                    {[1, 2, 3].map((_, idx) => (
+                      <div
+                        key={idx}
+                        className={`w-32 h-32 bg-gradient-to-br from-slate-600 to-slate-700 rounded-[2rem] flex items-center justify-center ${
+                          idx === 0 ? 'col-span-2 mx-auto' : ''
+                        }`}
+                      >
+                        <Users className="w-16 h-16 text-slate-400" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#0d1d35] border-2 border-slate-700/50 rounded-3xl p-12">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="flex items-center space-x-4 mb-8">
+                    <div className="w-24 h-24 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-12 h-12 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-4xl font-black text-white tracking-wide">ASIA</h3>
+                      <p className="text-2xl text-gray-300 font-light">Operations</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-4">
+                    {[
+                      'Role',
+                      'Regional Sourcing',
+                      'Local Manufacturing',
+                      'Market Expansion',
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
+                        <span className="text-xl text-white font-light">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="grid grid-cols-2 gap-4">
+                    {[1, 2, 3].map((_, idx) => (
+                      <div
+                        key={idx}
+                        className={`w-32 h-32 bg-gradient-to-br from-slate-600 to-slate-700 rounded-[2rem] flex items-center justify-center ${
+                          idx === 0 ? 'col-span-2 mx-auto' : ''
+                        }`}
+                      >
+                        <Users className="w-16 h-16 text-slate-400" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
