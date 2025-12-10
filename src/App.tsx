@@ -218,53 +218,53 @@ function App() {
               </div>
             </div>
 
-            <div className="relative hidden lg:block">
-              <div className="space-y-6">
-                <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg">
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                      <Globe2 className="w-8 h-8 text-white" />
+            <div className="relative hidden lg:block w-full">
+              <div className="space-y-6 w-full">
+                <div className="bg-white border-2 border-gray-200 rounded-3xl p-10 shadow-lg w-full">
+                  <div className="flex items-center space-x-4 mb-8">
+                    <div className="w-20 h-20 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <Globe2 className="w-10 h-10 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-black text-gray-900 tracking-wide">EUROPE</h3>
-                      <p className="text-lg text-gray-600 font-light">Operations</p>
+                      <h3 className="text-3xl font-black text-gray-900 tracking-wide">EUROPE</h3>
+                      <p className="text-xl text-gray-600 font-light">Operations</p>
                     </div>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4 pl-2">
                     {[
                       'Sourcing & Procurement',
                       'Logistics & Distribution',
                       'Sales & Marketing',
                       'Legal & Sustainability',
                     ].map((item, idx) => (
-                      <li key={idx} className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 bg-teal-600 rounded-full flex-shrink-0"></div>
-                        <span className="text-sm text-gray-700 font-light">{item}</span>
+                      <li key={idx} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-teal-600 rounded-full flex-shrink-0"></div>
+                        <span className="text-lg text-gray-700 font-light">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg">
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
-                      <MapPin className="w-8 h-8 text-white" />
+                <div className="bg-white border-2 border-gray-200 rounded-3xl p-10 shadow-lg w-full">
+                  <div className="flex items-center space-x-4 mb-8">
+                    <div className="w-20 h-20 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <MapPin className="w-10 h-10 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-black text-gray-900 tracking-wide">ASIA</h3>
-                      <p className="text-lg text-gray-600 font-light">Operations</p>
+                      <h3 className="text-3xl font-black text-gray-900 tracking-wide">ASIA</h3>
+                      <p className="text-xl text-gray-600 font-light">Operations</p>
                     </div>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-4 pl-2">
                     {[
                       'Role',
                       'Regional Sourcing',
                       'Local Manufacturing',
                       'Market Expansion',
                     ].map((item, idx) => (
-                      <li key={idx} className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 bg-teal-600 rounded-full flex-shrink-0"></div>
-                        <span className="text-sm text-gray-700 font-light">{item}</span>
+                      <li key={idx} className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-teal-600 rounded-full flex-shrink-0"></div>
+                        <span className="text-lg text-gray-700 font-light">{item}</span>
                       </li>
                     ))}
                   </ul>
