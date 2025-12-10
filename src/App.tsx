@@ -219,13 +219,114 @@ function App() {
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="absolute -top-20 -right-20 w-96 h-96 bg-gradient-to-br from-teal-300 to-cyan-300 rounded-full opacity-30 blur-3xl animate-pulse"></div>
-              <div className="relative">
-                <img
-                  src="/image copy.png"
-                  alt="Europe & Asia Operations"
-                  className="w-full h-auto rounded-3xl shadow-2xl"
-                />
+              <div className="space-y-6">
+                <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg">
+                  <div className="grid grid-cols-2 gap-8 items-center">
+                    <div>
+                      <div className="flex items-center space-x-3 mb-6">
+                        <div className="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <Globe2 className="w-8 h-8 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-2xl font-black text-gray-900 tracking-wide">EUROPE</h3>
+                          <p className="text-lg text-gray-600 font-light">Operations</p>
+                        </div>
+                      </div>
+                      <ul className="space-y-3">
+                        {[
+                          'Sourcing & Procurement',
+                          'Logistics & Distribution',
+                          'Sales & Marketing',
+                          'Legal & Sustainability',
+                        ].map((item, idx) => (
+                          <li key={idx} className="flex items-center space-x-2">
+                            <div className="w-1.5 h-1.5 bg-teal-600 rounded-full flex-shrink-0"></div>
+                            <span className="text-sm text-gray-700 font-light">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="col-span-2 mx-auto">
+                          <img
+                            src="/3.png"
+                            alt="Team member"
+                            className="w-24 h-24 object-cover rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="/4.png"
+                            alt="Team member"
+                            className="w-20 h-20 object-cover rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="/5.png"
+                            alt="Team member"
+                            className="w-20 h-20 object-cover rounded-full"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-lg">
+                  <div className="grid grid-cols-2 gap-8 items-center">
+                    <div>
+                      <div className="flex items-center space-x-3 mb-6">
+                        <div className="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                          <MapPin className="w-8 h-8 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-2xl font-black text-gray-900 tracking-wide">ASIA</h3>
+                          <p className="text-lg text-gray-600 font-light">Operations</p>
+                        </div>
+                      </div>
+                      <ul className="space-y-3">
+                        {[
+                          'Role',
+                          'Regional Sourcing',
+                          'Local Manufacturing',
+                          'Market Expansion',
+                        ].map((item, idx) => (
+                          <li key={idx} className="flex items-center space-x-2">
+                            <div className="w-1.5 h-1.5 bg-teal-600 rounded-full flex-shrink-0"></div>
+                            <span className="text-sm text-gray-700 font-light">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="col-span-2 mx-auto">
+                          <img
+                            src="/3.png"
+                            alt="Team member"
+                            className="w-24 h-24 object-cover rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="/4.png"
+                            alt="Team member"
+                            className="w-20 h-20 object-cover rounded-full"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src="/5.png"
+                            alt="Team member"
+                            className="w-20 h-20 object-cover rounded-full"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
