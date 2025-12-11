@@ -254,7 +254,7 @@ function App() {
 
                 <div className="group relative bg-gradient-to-br from-blue-50 via-white to-sky-50 border border-blue-200/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full overflow-hidden">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-100/20 to-transparent rounded-full blur-3xl -mr-32 -mt-32"></div>
-                  <div className="relative">
+                  <div className="relative" style="display:flex; gap:20px">
                     <div className="flex items-center space-x-5 mb-6">
                       <div className="relative">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-sky-600 rounded-2xl blur opacity-40 group-hover:opacity-60 transition-opacity"></div>
