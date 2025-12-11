@@ -312,7 +312,7 @@ function App() {
               <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
               <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
               <p className="text-gray-600 leading-relaxed text-sm">
-               founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
+               Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
               </p>
             </div>
 
@@ -323,8 +323,7 @@ function App() {
               <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
               <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
               <p className="text-gray-600 leading-relaxed text-sm">
-                *Nhà máy đống gào đó-xhyền cho Hardware and Fasteners. Vận hành Văn thận wich chấn
-                ISO 9001, BSCI để đảm bảu quảng hậu quặng hầu.
+               Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
               </p>
             </div>
 
