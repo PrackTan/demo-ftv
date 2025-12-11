@@ -219,66 +219,68 @@ function App() {
             </div>
 
             <div className="relative hidden lg:block w-full">
-              <div className="border-4 border-red-500 rounded-3xl p-8 bg-gradient-to-br from-gray-50 to-white shadow-xl">
-                <div className="grid grid-cols-2 gap-8">
-                  <div className="group relative bg-gradient-to-br from-teal-50 via-white to-cyan-50 rounded-2xl p-6 overflow-hidden">
-                    <div className="relative">
-                      <div className="flex items-center space-x-4 mb-6">
-                        <div className="relative">
-                          <div className="w-14 h-14 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
-                            <Globe2 className="w-7 h-7 text-white" />
-                          </div>
-                        </div>
-                        <div>
-                          <h3 className="text-2xl font-bold text-gray-900 tracking-tight">EUROPE</h3>
-                          <p className="text-sm text-teal-600 font-medium mt-0.5">Operations<br/>Division</p>
+              <div className="space-y-5 w-full">
+                <div className="group relative bg-gradient-to-br from-teal-50 via-white to-cyan-50 border border-teal-200/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-teal-100/20 to-transparent rounded-full blur-3xl -mr-32 -mt-32"></div>
+                  <div className="relative">
+                    <div className="flex items-center space-x-5 mb-6">
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl blur opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                        <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <Globe2 className="w-8 h-8 text-white" />
                         </div>
                       </div>
-                      <div className="h-px bg-gradient-to-r from-gray-200 to-transparent mb-5"></div>
-                      <ul className="space-y-3">
-                        {[
-                          'Sourcing & Procurement',
-                          'Logistics & Distribution',
-                          'Sales & Marketing',
-                          'Legal & Sustainability',
-                        ].map((item, idx) => (
-                          <li key={idx} className="flex items-center space-x-3">
-                            <div className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0"></div>
-                            <span className="text-sm text-gray-700 font-medium">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900 tracking-tight">EUROPE</h3>
+                        <p className="text-sm text-teal-600 font-medium mt-0.5">Operations Division</p>
+                      </div>
                     </div>
+                    <div className="h-px bg-gradient-to-r from-teal-200 via-teal-300 to-transparent mb-5"></div>
+                    <ul className="space-y-3">
+                      {[
+                        'Sourcing & Procurement',
+                        'Logistics & Distribution',
+                        'Sales & Marketing',
+                        'Legal & Sustainability',
+                      ].map((item, idx) => (
+                        <li key={idx} className="flex items-center space-x-3 group/item">
+                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex-shrink-0 group-hover/item:scale-150 transition-transform"></div>
+                          <span className="text-sm text-gray-700 font-medium group-hover/item:text-teal-700 transition-colors">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+                </div>
 
-                  <div className="group relative bg-gradient-to-br from-blue-50 via-white to-sky-50 rounded-2xl p-6 overflow-hidden">
-                    <div className="relative">
-                      <div className="flex items-center space-x-4 mb-6">
-                        <div className="relative">
-                          <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-sky-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
-                            <MapPin className="w-7 h-7 text-white" />
-                          </div>
-                        </div>
-                        <div>
-                          <h3 className="text-2xl font-bold text-gray-900 tracking-tight">ASIA</h3>
-                          <p className="text-sm text-blue-600 font-medium mt-0.5">Operations<br/>Division</p>
+                <div className="group relative bg-gradient-to-br from-blue-50 via-white to-sky-50 border border-blue-200/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] w-full overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-100/20 to-transparent rounded-full blur-3xl -mr-32 -mt-32"></div>
+                  <div className="relative">
+                    <div className="flex items-center space-x-5 mb-6">
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-sky-600 rounded-2xl blur opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                        <div className="relative w-16 h-16 bg-gradient-to-br from-blue-500 to-sky-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                          <MapPin className="w-8 h-8 text-white" />
                         </div>
                       </div>
-                      <div className="h-px bg-gradient-to-r from-gray-200 to-transparent mb-5"></div>
-                      <ul className="space-y-3">
-                        {[
-                          'Role',
-                          'Regional Sourcing',
-                          'Local Manufacturing',
-                          'Market Expansion',
-                        ].map((item, idx) => (
-                          <li key={idx} className="flex items-center space-x-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
-                            <span className="text-sm text-gray-700 font-medium">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <div>
+                        <h3 className="text-2xl font-bold text-gray-900 tracking-tight">ASIA</h3>
+                        <p className="text-sm text-blue-600 font-medium mt-0.5">Operations Division</p>
+                      </div>
                     </div>
+                    <div className="h-px bg-gradient-to-r from-blue-200 via-blue-300 to-transparent mb-5"></div>
+                    <ul className="space-y-3">
+                      {[
+                        'Role',
+                        'Regional Sourcing',
+                        'Local Manufacturing',
+                        'Market Expansion',
+                      ].map((item, idx) => (
+                        <li key={idx} className="flex items-center space-x-3 group/item">
+                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex-shrink-0 group-hover/item:scale-150 transition-transform"></div>
+                          <span className="text-sm text-gray-700 font-medium group-hover/item:text-blue-700 transition-colors">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
