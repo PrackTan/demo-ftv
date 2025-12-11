@@ -334,8 +334,7 @@ function App() {
               <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
               <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
               <p className="text-gray-600 leading-relaxed text-sm">
-                *Nhà máy tại KCN Bình Dương, chiền giáo Screws, Bolts, Washers. Hiếu khấn khén
-                wah thống phá dủa (an tất-clamping duties).
+               Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
               </p>
             </div>
           </div>
