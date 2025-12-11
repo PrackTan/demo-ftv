@@ -312,8 +312,7 @@ function App() {
               <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
               <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
               <p className="text-gray-600 leading-relaxed text-sm">
-                *Sourcing, Purchasing và "Quản lý Nhà cung cấp" cho khu vực Châu Á. Hỗ trợ phát
-                đuổi tới từ procurement và xuấy tử xảu. Hoạn thực xuất ưu ưrn.
+               founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
               </p>
             </div>
 
