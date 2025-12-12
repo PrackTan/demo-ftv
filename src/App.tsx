@@ -148,15 +148,14 @@ function App() {
         )}
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden pt-20">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-200/40 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-200/40 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-16">
+          <div className="grid lg:grid-cols-[1fr,1.2fr] gap-12 items-start">
             <div className="space-y-8">
               <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-teal-200 px-4 py-2 rounded-full shadow-sm">
                 <Sparkles className="w-4 h-4 text-teal-600" />
@@ -164,7 +163,7 @@ function App() {
               </div>
 
               <div className="space-y-6">
-                <h1 className="text-6xl lg:text-7xl font-black text-gray-900 leading-none">
+                <h1 className="text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
                   Asian Supply
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-cyan-500 to-green-500">
@@ -172,7 +171,7 @@ function App() {
                   </span>
                 </h1>
 
-                <p className="text-xl text-gray-700 leading-relaxed max-w-xl">
+                <p className="text-lg text-gray-700 leading-relaxed max-w-xl">
                   Connecting Asian manufacturing excellence to European markets through integrated sourcing, packaging, and logistics solutions backed by Suki Group heritage.
                 </p>
               </div>
@@ -195,47 +194,48 @@ function App() {
                 </button>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 pt-8">
+              <div className="grid grid-cols-3 gap-4 pt-4">
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-teal-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
                   <div className="relative bg-white/80 backdrop-blur-sm border border-teal-100 rounded-2xl p-4 shadow-sm">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-cyan-600">70+</div>
+                    <div className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-cyan-600">70+</div>
                     <div className="text-xs text-gray-600 font-medium mt-1">Years Heritage</div>
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
                   <div className="relative bg-white/80 backdrop-blur-sm border border-green-100 rounded-2xl p-4 shadow-sm">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-emerald-600">5K m²</div>
+                    <div className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-emerald-600">5K m²</div>
                     <div className="text-xs text-gray-600 font-medium mt-1">Facility Size</div>
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
                   <div className="relative bg-white/80 backdrop-blur-sm border border-cyan-100 rounded-2xl p-4 shadow-sm">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-600 to-blue-600">30+</div>
+                    <div className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-600 to-blue-600">30+</div>
                     <div className="text-xs text-gray-600 font-medium mt-1">Containers/Mo</div>
                   </div>
                 </div>
               </div>
+
+              <OperationsCards />
             </div>
 
-            <div className="relative hidden lg:block w-full h-[600px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-50/50 via-transparent to-cyan-50/50 rounded-3xl"></div>
+            <div className="relative hidden lg:block w-full" style={{ minHeight: '700px' }}>
+              <div className="absolute inset-0 bg-white/60 backdrop-blur-sm rounded-3xl shadow-xl"></div>
               <HexagonGrid
                 images={[
-                  'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
                   '/3.png',
                   'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/4.png',
                   'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  '/4.png',
                   'https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/5.png',
                   'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  '/5.png',
                   'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -246,16 +246,11 @@ function App() {
                   'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=400',
                   'https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184413/pexels-photo-3184413.jpeg?auto=compress&cs=tinysrgb&w=400',
                 ]}
               />
             </div>
           </div>
         </div>
-
-        <OperationsCards />
 
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
