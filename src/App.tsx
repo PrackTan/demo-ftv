@@ -25,7 +25,6 @@ import {
 } from 'lucide-react';
 import { HexagonGrid } from './components/HexagonGrid';
 import { OperationsCards } from './components/OperationsCards';
-import { AsianOperations } from './components/AsianOperations';
 
 // SukiGroup Color Palette
 // Primary: Cool Gray (slate-600 to slate-700)
@@ -261,29 +260,27 @@ function App() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      <AsianOperations />
-
-      <section id="about" className="relative py-32 bg-white">
+      <section id="about" className="section relative py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="section-header text-center mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-teal-100 px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 text-slate-600" />
               <span className="text-sm font-bold text-slate-900">The FTV Asia Advantage</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="section-title text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Suki Group Excellence
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
                 in Asian Markets
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="section-subtitle text-xl text-gray-600 max-w-3xl mx-auto">
               Strategic Asian subsidiary bringing 70+ years of European excellence to retail logistics, product solutions, and supply chain management
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="hexagon-container relative h-[700px] rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-white p-8 border border-gray-200">
+          <div className="content-grid grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="media-panel relative h-[700px] rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-white p-8 border border-gray-200">
               <HexagonGrid
                 images={[
                   '/1 copy.png',
@@ -305,8 +302,8 @@ function App() {
               />
             </div>
 
-            <div className="space-y-6">
-              <div className="card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+            <div className="cards-column space-y-6">
+              <div className="card card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
                 <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all shadow-lg">
                   <span className="text-3xl">🇨🇳</span>
                 </div>
@@ -317,7 +314,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="card card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
                 <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all shadow-lg">
                   <Factory className="w-8 h-8 text-white" />
                 </div>
@@ -328,7 +325,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="card card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
                 <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all shadow-lg">
                   <span className="text-3xl">🇻🇳</span>
                 </div>
