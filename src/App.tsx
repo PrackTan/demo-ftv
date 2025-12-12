@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { HexagonGrid } from './components/HexagonGrid';
 import { OperationsCards } from './components/OperationsCards';
+import { AsianOperations } from './components/AsianOperations';
 
 // SukiGroup Color Palette
 // Primary: Cool Gray (slate-600 to slate-700)
@@ -259,6 +260,8 @@ function App() {
 
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
+
+      <AsianOperations />
 
       <section id="about" className="relative py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
