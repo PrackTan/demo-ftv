@@ -260,81 +260,57 @@ function App() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      <section id="about" className="section relative py-32 bg-white">
+      <section id="about" className="relative py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="section-header text-center mb-20">
+          <div className="text-center mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-teal-100 px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 text-slate-600" />
               <span className="text-sm font-bold text-slate-900">The FTV Asia Advantage</span>
             </div>
-            <h2 className="section-title text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
               Suki Group Excellence
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
                 in Asian Markets
               </span>
             </h2>
-            <p className="section-subtitle text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Strategic Asian subsidiary bringing 70+ years of European excellence to retail logistics, product solutions, and supply chain management
             </p>
           </div>
 
-          <div className="content-grid grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="media-panel relative h-[700px] rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-white p-8 border border-gray-200">
-              <HexagonGrid
-                images={[
-                  '/1 copy.png',
-                  'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/3.png',
-                  'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/4.png',
-                  'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/5.png',
-                  'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
-                ]}
-              />
+          <div className="grid lg:grid-cols-3 gap-8 mb-20">
+            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                <span className="text-3xl">🇨🇳</span>
+              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
+              <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+               Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
+              </p>
             </div>
 
-            <div className="cards-column space-y-6">
-              <div className="card card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all shadow-lg">
-                  <span className="text-3xl">🇨🇳</span>
-                </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
-                <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                 Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
-                </p>
+            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                <Factory className="w-8 h-8 text-white" />
               </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
+              <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+               Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
+              </p>
+            </div>
 
-              <div className="card card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all shadow-lg">
-                  <Factory className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
-                <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                 Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
-                </p>
+            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                <span className="text-3xl">🇻🇳</span>
               </div>
-
-              <div className="card card-animate opacity-0 group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all shadow-lg">
-                  <span className="text-3xl">🇻🇳</span>
-                </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
-                <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                 Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
-                </p>
-              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
+              <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
+              <p className="text-gray-600 leading-relaxed text-sm">
+               Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
+              </p>
             </div>
           </div>
 
