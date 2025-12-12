@@ -23,6 +23,8 @@ import {
   Star,
   Sparkles,
 } from 'lucide-react';
+import { HexagonGrid } from './components/HexagonGrid';
+import { OperationsCards } from './components/OperationsCards';
 
 // SukiGroup Color Palette
 // Primary: Cool Gray (slate-600 to slate-700)
@@ -218,69 +220,42 @@ function App() {
               </div>
             </div>
 
-            <div className="relative hidden lg:block w-full">
-              <div className="grid grid-cols-2 gap-6 w-full">
-                <div className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  <div className="relative">
-                    <div className="flex items-start space-x-4 mb-6">
-                      <div className="relative">
-                        <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <Globe2 className="w-8 h-8 text-white" />
-                        </div>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 tracking-tight">EUROPE</h3>
-                        <p className="text-sm text-teal-600 font-medium mt-1">Operations Division</p>
-                      </div>
-                    </div>
-                    <ul className="space-y-3">
-                      {[
-                        'Sourcing & Procurement',
-                        'Logistics & Distribution',
-                        'Sales & Marketing',
-                        'Legal & Sustainability',
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-teal-500 rounded-full flex-shrink-0"></div>
-                          <span className="text-sm text-gray-700 font-medium">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  <div className="relative">
-                    <div className="flex items-start space-x-4 mb-6">
-                      <div className="relative">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-sky-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md">
-                          <MapPin className="w-8 h-8 text-white" />
-                        </div>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 tracking-tight">ASIA</h3>
-                        <p className="text-sm text-blue-600 font-medium mt-1">Operations Division</p>
-                      </div>
-                    </div>
-                    <ul className="space-y-3">
-                      {[
-                        'Role',
-                        'Regional Sourcing',
-                        'Local Manufacturing',
-                        'Market Expansion',
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
-                          <span className="text-sm text-gray-700 font-medium">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div className="relative hidden lg:block w-full h-[600px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-50/50 via-transparent to-cyan-50/50 rounded-3xl"></div>
+              <HexagonGrid
+                images={[
+                  'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  '/3.png',
+                  'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  '/4.png',
+                  'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  '/5.png',
+                  'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184396/pexels-photo-3184396.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400',
+                  'https://images.pexels.com/photos/3184413/pexels-photo-3184413.jpeg?auto=compress&cs=tinysrgb&w=400',
+                ]}
+              />
             </div>
           </div>
         </div>
+
+        <OperationsCards />
 
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
