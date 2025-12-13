@@ -148,7 +148,7 @@ function App() {
         )}
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20 pb-80">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-200/40 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-200/40 to-transparent rounded-full blur-3xl"></div>
