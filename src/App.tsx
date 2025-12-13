@@ -288,36 +288,36 @@ function App() {
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 order-1 lg:order-2">
-              <div className="group relative bg-white rounded-xl md:rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
-                <div className="relative w-10 h-10 md:w-12 md:h-12 bg-teal-500 rounded-lg md:rounded-xl flex items-center justify-center mb-3 md:mb-4 transform group-hover:scale-110 transition-all">
-                  <Factory className="w-5 h-5 md:w-6 md:h-6 text-white" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-3 order-1 lg:order-2">
+              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
+                <div className="relative w-8 h-8 md:w-10 md:h-10 bg-teal-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
+                  <Factory className="w-4 h-4 md:w-5 md:h-5 text-white" />
                 </div>
-                <h3 className="text-base md:text-lg font-black text-gray-900 mb-1.5">Vietnam Packing Factory</h3>
-                <p className="text-xs text-gray-500 mb-2">Ho Minh City (3,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-xs">
+                <h3 className="text-sm md:text-base font-black text-gray-900 mb-1">Vietnam Packing Factory</h3>
+                <p className="text-[10px] md:text-xs text-gray-500 mb-1.5">Ho Minh City (3,000 m²)</p>
+                <p className="text-gray-600 leading-relaxed text-[10px] md:text-xs">
                  Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
                 </p>
               </div>
 
-              <div className="group relative bg-white rounded-xl md:rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
-                <div className="relative w-10 h-10 md:w-12 md:h-12 bg-teal-500 rounded-lg md:rounded-xl flex items-center justify-center mb-3 md:mb-4 transform group-hover:scale-110 transition-all">
-                  <Package className="w-5 h-5 md:w-6 md:h-6 text-white" />
+              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
+                <div className="relative w-8 h-8 md:w-10 md:h-10 bg-teal-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
+                  <Package className="w-4 h-4 md:w-5 md:h-5 text-white" />
                 </div>
-                <h3 className="text-base md:text-lg font-black text-gray-900 mb-1.5">Asia Sourcing & Buying Office</h3>
-                <p className="text-xs text-gray-500 mb-2">Shanghai, China (Founded Sep 2019)</p>
-                <p className="text-gray-600 leading-relaxed text-xs">
+                <h3 className="text-sm md:text-base font-black text-gray-900 mb-1">Asia Sourcing & Buying Office</h3>
+                <p className="text-[10px] md:text-xs text-gray-500 mb-1.5">Shanghai, China (Founded Sep 2019)</p>
+                <p className="text-gray-600 leading-relaxed text-[10px] md:text-xs">
                  Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
                 </p>
               </div>
 
-              <div className="group relative bg-white rounded-xl md:rounded-2xl p-4 md:p-5 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 md:col-span-2">
-                <div className="relative w-10 h-10 md:w-12 md:h-12 bg-orange-500 rounded-lg md:rounded-xl flex items-center justify-center mb-3 md:mb-4 transform group-hover:scale-110 transition-all">
-                  <Factory className="w-5 h-5 md:w-6 md:h-6 text-white" />
+              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 md:col-span-2">
+                <div className="relative w-8 h-8 md:w-10 md:h-10 bg-orange-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
+                  <Factory className="w-4 h-4 md:w-5 md:h-5 text-white" />
                 </div>
-                <h3 className="text-base md:text-lg font-black text-gray-900 mb-1.5">China Packing Factory</h3>
-                <p className="text-xs text-gray-500 mb-2">Kunshan City, Jiausu (8,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-xs">
+                <h3 className="text-sm md:text-base font-black text-gray-900 mb-1">China Packing Factory</h3>
+                <p className="text-[10px] md:text-xs text-gray-500 mb-1.5">Kunshan City, Jiausu (8,000 m²)</p>
+                <p className="text-gray-600 leading-relaxed text-[10px] md:text-xs">
                  Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
                 </p>
               </div>
