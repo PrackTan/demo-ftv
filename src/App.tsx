@@ -289,9 +289,20 @@ function App() {
             </div>
 
             <div className="space-y-4 md:space-y-6 order-1 lg:order-2">
-              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
-                  <span className="text-2xl md:text-3xl">🇨🇳</span>
+              <div className="group relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-teal-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
+                  <Factory className="w-6 h-6 md:w-8 md:h-8 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
+                <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Ho Minh City (3,000 m²)</p>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                 Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
+                </p>
+              </div>
+
+              <div className="group relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-teal-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
+                  <Package className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
                 <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Shanghai, China (Founded Sep 2019)</p>
@@ -300,25 +311,14 @@ function App() {
                 </p>
               </div>
 
-              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
+              <div className="group relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-orange-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
                   <Factory className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
                 <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Kunshan City, Jiausu (8,000 m²)</p>
                 <p className="text-gray-600 leading-relaxed text-sm">
                  Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
-                </p>
-              </div>
-
-              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
-                  <span className="text-2xl md:text-3xl">🇻🇳</span>
-                </div>
-                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
-                <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Ho Minh City (3,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                 Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
                 </p>
               </div>
             </div>
