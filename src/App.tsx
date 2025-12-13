@@ -148,23 +148,23 @@ function App() {
         )}
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20 pb-80">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20 pb-40 md:pb-80">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-200/40 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-200/40 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-br from-teal-200/40 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-tr from-cyan-200/40 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="space-y-6 md:space-y-8">
               <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-teal-200 px-4 py-2 rounded-full shadow-sm">
                 <Sparkles className="w-4 h-4 text-teal-600" />
                 <span className="text-sm font-bold text-teal-600">70+ Years of Excellence</span>
               </div>
 
-              <div className="space-y-6">
-                <h1 className="text-6xl lg:text-7xl font-black text-gray-900 leading-none">
+              <div className="space-y-4 md:space-y-6">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 leading-none">
                   Asian Supply
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-cyan-500 to-green-500">
@@ -172,7 +172,7 @@ function App() {
                   </span>
                 </h1>
 
-                <p className="text-xl text-gray-700 leading-relaxed max-w-xl">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">
                   Connecting Asian manufacturing excellence to European markets through integrated sourcing, packaging, and logistics solutions backed by Suki Group heritage.
                 </p>
               </div>
@@ -180,7 +180,7 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105"
+                  className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105"
                 >
                   <span className="relative z-10 flex items-center justify-center space-x-2">
                     <span>Start Partnership</span>
@@ -189,32 +189,32 @@ function App() {
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="border-2 border-teal-500 text-teal-600 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-teal-50 transition-all duration-300"
+                  className="border-2 border-teal-500 text-teal-600 px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:bg-teal-50 transition-all duration-300"
                 >
                   Explore More
                 </button>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 pt-8">
+              <div className="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-8">
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-teal-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
-                  <div className="relative bg-white/80 backdrop-blur-sm border border-teal-100 rounded-2xl p-4 shadow-sm">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-cyan-600">70+</div>
-                    <div className="text-xs text-gray-600 font-medium mt-1">Years Heritage</div>
+                  <div className="relative bg-white/80 backdrop-blur-sm border border-teal-100 rounded-xl md:rounded-2xl p-3 md:p-4 shadow-sm">
+                    <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-cyan-600">70+</div>
+                    <div className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Years Heritage</div>
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
-                  <div className="relative bg-white/80 backdrop-blur-sm border border-green-100 rounded-2xl p-4 shadow-sm">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-emerald-600">5K m²</div>
-                    <div className="text-xs text-gray-600 font-medium mt-1">Facility Size</div>
+                  <div className="relative bg-white/80 backdrop-blur-sm border border-green-100 rounded-xl md:rounded-2xl p-3 md:p-4 shadow-sm">
+                    <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-emerald-600">5K m²</div>
+                    <div className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Facility Size</div>
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
-                  <div className="relative bg-white/80 backdrop-blur-sm border border-cyan-100 rounded-2xl p-4 shadow-sm">
-                    <div className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-600 to-blue-600">30+</div>
-                    <div className="text-xs text-gray-600 font-medium mt-1">Containers/Mo</div>
+                  <div className="relative bg-white/80 backdrop-blur-sm border border-cyan-100 rounded-xl md:rounded-2xl p-3 md:p-4 shadow-sm">
+                    <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-600 to-blue-600">30+</div>
+                    <div className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Containers/Mo</div>
                   </div>
                 </div>
               </div>
@@ -260,27 +260,27 @@ function App() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      <section id="about" className="relative py-32 bg-white">
+      <section id="about" className="relative py-16 md:py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-teal-100 px-4 py-2 rounded-full mb-6">
               <Star className="w-4 h-4 text-slate-600" />
               <span className="text-sm font-bold text-slate-900">The FTV Asia Advantage</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-4 md:mb-6 px-4">
               Suki Group Excellence
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
                 in Asian Markets
               </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Strategic Asian subsidiary bringing 70+ years of European excellence to retail logistics, product solutions, and supply chain management
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="relative lg:scale-110">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16 lg:mb-20">
+            <div className="relative order-2 lg:order-1 lg:scale-110">
               <img
                 src="/1.png"
                 alt="Manufacturing Operations"
@@ -288,35 +288,35 @@ function App() {
               />
             </div>
 
-            <div className="space-y-6">
-              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
-                  <span className="text-3xl">🇨🇳</span>
+            <div className="space-y-4 md:space-y-6 order-1 lg:order-2">
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
+                  <span className="text-2xl md:text-3xl">🇨🇳</span>
                 </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
-                <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
+                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
+                <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Shanghai, China (Founded Sep 2019)</p>
                 <p className="text-gray-600 leading-relaxed text-sm">
                  Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
                 </p>
               </div>
 
-              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
-                  <Factory className="w-8 h-8 text-white" />
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
+                  <Factory className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
-                <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
+                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
+                <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Kunshan City, Jiausu (8,000 m²)</p>
                 <p className="text-gray-600 leading-relaxed text-sm">
                  Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
                 </p>
               </div>
 
-              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-                <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
-                  <span className="text-3xl">🇻🇳</span>
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
+                  <span className="text-2xl md:text-3xl">🇻🇳</span>
                 </div>
-                <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
-                <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
+                <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
+                <p className="text-xs md:text-sm text-gray-500 mb-3 md:mb-4">Ho Minh City (3,000 m²)</p>
                 <p className="text-gray-600 leading-relaxed text-sm">
                  Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
                 </p>
@@ -324,42 +324,42 @@ function App() {
             </div>
           </div>
 
-          <div className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white rounded-[3rem] p-12 overflow-hidden border-2 border-gray-200 shadow-lg">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white rounded-2xl md:rounded-3xl lg:rounded-[3rem] p-6 md:p-10 lg:p-12 overflow-hidden border-2 border-gray-200 shadow-lg">
+            <div className="absolute top-0 right-0 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
 
-            <div className="relative grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <h3 className="text-4xl font-black text-gray-900 mb-8">Strategic Asian Presence</h3>
-                <div className="space-y-6">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-gray-900 mb-6 md:mb-8">Strategic Asian Presence</h3>
+                <div className="space-y-4 md:space-y-6">
                   {[
                     { icon: MapPin, title: 'Hong Kong HQ', desc: 'Strategic hub connecting East and West', color: 'teal' },
                     { icon: Search, title: 'Shanghai Sourcing', desc: 'Market intelligence for fasteners, tools, adhesives', color: 'orange' },
                     { icon: Factory, title: 'Packing Centers', desc: 'Jiaxing 5,000m² & Ho Chi Minh 30 containers/mo', color: 'cyan' },
                   ].map((loc, idx) => (
-                    <div key={idx} className="flex items-start space-x-4 group">
-                      <div className={`w-12 h-12 bg-${loc.color}-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                        <loc.icon className={`w-6 h-6 text-${loc.color}-600`} />
+                    <div key={idx} className="flex items-start space-x-3 md:space-x-4 group">
+                      <div className={`w-10 h-10 md:w-12 md:h-12 bg-${loc.color}-100 rounded-lg md:rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                        <loc.icon className={`w-5 h-5 md:w-6 md:h-6 text-${loc.color}-600`} />
                       </div>
                       <div>
-                        <div className="text-lg font-bold text-gray-900 mb-1">{loc.title}</div>
-                        <p className="text-gray-600 text-sm">{loc.desc}</p>
+                        <div className="text-base md:text-lg font-bold text-gray-900 mb-1">{loc.title}</div>
+                        <p className="text-gray-600 text-xs md:text-sm">{loc.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
                 {[
                   { icon: Award, label: 'ISO Certified', color: 'teal' },
                   { icon: Shield, label: 'BSCI', color: 'orange' },
                   { icon: Globe2, label: 'Pan-European', color: 'cyan' },
                   { icon: TrendingUp, label: 'Financial Stability', color: 'teal' },
                 ].map((cert, idx) => (
-                  <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition-all group">
-                    <cert.icon className={`w-10 h-10 text-${cert.color}-600 mb-4 group-hover:scale-110 transition-transform`} />
-                    <div className="text-lg font-bold text-gray-900">{cert.label}</div>
+                  <div key={idx} className="bg-white border border-gray-200 rounded-xl md:rounded-2xl p-4 md:p-6 hover:shadow-md transition-all group">
+                    <cert.icon className={`w-8 h-8 md:w-10 md:h-10 text-${cert.color}-600 mb-3 md:mb-4 group-hover:scale-110 transition-transform`} />
+                    <div className="text-sm md:text-base lg:text-lg font-bold text-gray-900">{cert.label}</div>
                   </div>
                 ))}
               </div>
@@ -368,14 +368,14 @@ function App() {
         </div>
       </section>
 
-      <section id="services" className="py-32 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section id="services" className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-100 to-slate-100 px-4 py-2 rounded-full mb-6">
               <Container className="w-4 h-4 text-red-600" />
               <span className="text-sm font-bold text-red-900">Our Services</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-4 md:mb-6 px-4">
               Integrated Asian
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-teal-600">
@@ -384,7 +384,7 @@ function App() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-8">
             {[
               {
                 icon: Search,
@@ -433,24 +433,24 @@ function App() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-transparent"
+                className="group relative bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-gray-100 hover:border-transparent"
               >
-                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-gray-100 to-transparent rounded-full blur-3xl"></div>
-                <div className="relative p-8">
-                  <div className="flex items-start space-x-4 mb-6">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center flex-shrink-0 transform group-hover:scale-110 group-hover:rotate-6 transition-all`}>
-                      <service.icon className="w-8 h-8 text-white" />
+                <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-gray-100 to-transparent rounded-full blur-3xl"></div>
+                <div className="relative p-6 md:p-8">
+                  <div className="flex items-start space-x-3 md:space-x-4 mb-4 md:mb-6">
+                    <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br ${service.gradient} rounded-xl md:rounded-2xl flex items-center justify-center flex-shrink-0 transform group-hover:scale-110 group-hover:rotate-6 transition-all`}>
+                      <service.icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-black text-gray-900 mb-2">{service.title}</h3>
-                      <p className="text-gray-600">{service.desc}</p>
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-black text-gray-900 mb-1 md:mb-2">{service.title}</h3>
+                      <p className="text-sm md:text-base text-gray-600">{service.desc}</p>
                     </div>
                   </div>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 md:space-y-3">
                     {service.items.map((item, i) => (
-                      <li key={i} className="flex items-start space-x-3">
-                        <CheckCircle2 className="w-5 h-5 text-slate-600 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{item}</span>
+                      <li key={i} className="flex items-start space-x-2 md:space-x-3">
+                        <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-slate-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm md:text-base text-gray-700">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -461,19 +461,19 @@ function App() {
         </div>
       </section>
 
-      <section id="solutions" className="py-32 bg-gradient-to-br from-gray-100 via-gray-50 to-white relative overflow-hidden">
+      <section id="solutions" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-100 via-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center space-x-2 bg-white border border-teal-200 px-4 py-2 rounded-full mb-6 shadow-sm">
               <Sparkles className="w-4 h-4 text-teal-600" />
               <span className="text-sm font-bold text-teal-600">Solutions</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-4 md:mb-6 px-4">
               Problems We Solve
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
               Turning supply chain challenges into competitive advantages
             </p>
           </div>
@@ -505,19 +505,19 @@ function App() {
                 solution: 'We coordinate suppliers, production, and logistics under one partner',
               },
             ].map((item, idx) => (
-              <div key={idx} className="group bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all">
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <X className="w-5 h-5 text-red-600" />
+              <div key={idx} className="group bg-white border border-gray-200 rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all">
+                <div className="flex items-start space-x-3 md:space-x-4 mb-3 md:mb-4">
+                  <div className="w-8 h-8 md:w-10 md:h-10 bg-red-100 rounded-lg md:rounded-xl flex items-center justify-center flex-shrink-0">
+                    <X className="w-4 h-4 md:w-5 md:h-5 text-red-600" />
                   </div>
                   <div>
-                    <div className="text-lg font-bold text-gray-900 mb-1">{item.problem}</div>
-                    <p className="text-gray-500 text-sm">Traditional challenge</p>
+                    <div className="text-base md:text-lg font-bold text-gray-900 mb-1">{item.problem}</div>
+                    <p className="text-gray-500 text-xs md:text-sm">Traditional challenge</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4 bg-green-50 rounded-2xl p-4 border border-green-200">
-                  <CheckCircle2 className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
-                  <p className="text-green-800 font-medium">{item.solution}</p>
+                <div className="flex items-start space-x-3 md:space-x-4 bg-green-50 rounded-xl md:rounded-2xl p-3 md:p-4 border border-green-200">
+                  <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-sm md:text-base text-green-800 font-medium">{item.solution}</p>
                 </div>
               </div>
             ))}
@@ -525,14 +525,14 @@ function App() {
         </div>
       </section>
 
-      <section id="network" className="py-32 bg-white">
+      <section id="network" className="py-16 md:py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-teal-100 px-4 py-2 rounded-full mb-6">
               <Award className="w-4 h-4 text-slate-600" />
               <span className="text-sm font-bold text-slate-900">Suki Group Synergies</span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-4 md:mb-6 px-4">
               Powered by
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
@@ -541,7 +541,7 @@ function App() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6">
             {[
               { icon: Globe2, title: 'Pan-European Integration', desc: 'Distribution hubs across Europe', gradient: 'from-slate-500 to-teal-600' },
               { icon: Users, title: 'Shared Supplier Ecosystem', desc: 'Audited, compliant suppliers', gradient: 'from-red-500 to-rose-600' },
@@ -551,13 +551,13 @@ function App() {
             ].map((synergy, idx) => (
               <div
                 key={idx}
-                className={`group relative bg-gradient-to-br ${synergy.gradient} rounded-3xl p-8 text-white hover:scale-105 transition-all duration-300 overflow-hidden`}
+                className={`group relative bg-gradient-to-br ${synergy.gradient} rounded-2xl md:rounded-3xl p-6 md:p-8 text-white hover:scale-105 transition-all duration-300 overflow-hidden`}
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 bg-white/10 rounded-full blur-2xl"></div>
                 <div className="relative">
-                  <synergy.icon className="w-12 h-12 mb-6 opacity-90 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-xl font-black mb-3">{synergy.title}</h3>
-                  <p className="text-white/80 text-sm leading-relaxed">{synergy.desc}</p>
+                  <synergy.icon className="w-10 h-10 md:w-12 md:h-12 mb-4 md:mb-6 opacity-90 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg md:text-xl font-black mb-2 md:mb-3">{synergy.title}</h3>
+                  <p className="text-white/80 text-xs md:text-sm leading-relaxed">{synergy.desc}</p>
                 </div>
               </div>
             ))}
@@ -566,61 +566,61 @@ function App() {
       </section>
 
      
-      <section id="contact" className="relative py-32 bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden">
+      <section id="contact" className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-6 md:mb-8">
             Ready to Transform
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
               Your Supply Chain?
             </span>
           </h2>
-          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
             Partner with FTV Asia to unify your Asian sourcing under the Suki Group's legacy of excellence. Let's build smarter, faster, and more reliable supply chains together.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-12 md:mb-16 lg:mb-20">
             <a
               href="mailto:contact@ftvasia.com"
-              className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
+              className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center space-x-3"
             >
               <span>Contact Us</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             <button
               onClick={() => scrollToSection('about')}
-              className="border-2 border-teal-500 text-teal-600 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-teal-50 transition-all duration-300"
+              className="border-2 border-teal-500 text-teal-600 px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:bg-teal-50 transition-all duration-300"
             >
               Learn More
             </button>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {[
               { icon: MapPin, title: 'Headquarters', desc: 'Hong Kong', color: 'teal' },
               { icon: Building2, title: 'Facilities', desc: 'China & Vietnam', color: 'orange' },
               { icon: Globe2, title: 'Network', desc: 'Asia to Europe', color: 'cyan' },
             ].map((loc, idx) => (
-              <div key={idx} className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
-                <div className={`w-14 h-14 bg-${loc.color}-100 rounded-xl flex items-center justify-center mx-auto mb-4`}>
-                  <loc.icon className={`w-7 h-7 text-${loc.color}-600`} />
+              <div key={idx} className="bg-white border border-gray-200 rounded-xl md:rounded-2xl p-5 md:p-6 shadow-sm">
+                <div className={`w-12 h-12 md:w-14 md:h-14 bg-${loc.color}-100 rounded-lg md:rounded-xl flex items-center justify-center mx-auto mb-3 md:mb-4`}>
+                  <loc.icon className={`w-6 h-6 md:w-7 md:h-7 text-${loc.color}-600`} />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{loc.title}</h3>
-                <p className="text-gray-600">{loc.desc}</p>
+                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">{loc.title}</h3>
+                <p className="text-sm md:text-base text-gray-600">{loc.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <footer className="bg-gray-100 text-gray-600 py-16 px-4 border-t border-gray-200">
+      <footer className="bg-gray-100 text-gray-600 py-12 md:py-16 px-4 border-t border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <div className="relative">
@@ -670,9 +670,9 @@ function App() {
             </div>
           </div>
 
-          <div className="border-t border-gray-300 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+          <div className="border-t border-gray-300 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm gap-3">
             <p>&copy; 2024 FTV Asia. All rights reserved.</p>
-            <p className="mt-4 md:mt-0 text-teal-600 font-semibold">Part of the Suki Group - 70+ Years of Excellence</p>
+            <p className="text-teal-600 font-semibold text-center">Part of the Suki Group - 70+ Years of Excellence</p>
           </div>
         </div>
       </footer>
