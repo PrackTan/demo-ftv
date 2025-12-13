@@ -279,38 +279,49 @@ function App() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-20">
-            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-              <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
-                <span className="text-3xl">🇨🇳</span>
-              </div>
-              <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
-              <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
-              <p className="text-gray-600 leading-relaxed text-sm">
-               Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-100/50 via-transparent to-cyan-100/50 rounded-3xl blur-2xl"></div>
+              <img
+                src="/1.png"
+                alt="Manufacturing Operations"
+                className="relative w-full h-auto rounded-3xl shadow-2xl"
+              />
             </div>
 
-            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-              <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
-                <Factory className="w-8 h-8 text-white" />
+            <div className="space-y-6">
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                  <span className="text-3xl">🇨🇳</span>
+                </div>
+                <h3 className="text-2xl font-black text-gray-900 mb-2">Asia Sourcing & Buying Office</h3>
+                <p className="text-sm text-gray-500 mb-4">Shanghai, China (Founded Sep 2019)</p>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                 Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
+                </p>
               </div>
-              <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
-              <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
-              <p className="text-gray-600 leading-relaxed text-sm">
-               Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
-              </p>
-            </div>
 
-            <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
-              <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
-                <span className="text-3xl">🇻🇳</span>
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                  <Factory className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-black text-gray-900 mb-2">China Packing Factory</h3>
+                <p className="text-sm text-gray-500 mb-4">Kunshan City, Jiausu (8,000 m²)</p>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                 Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
+                </p>
               </div>
-              <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
-              <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
-              <p className="text-gray-600 leading-relaxed text-sm">
-               Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
-              </p>
+
+              <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+                <div className="relative w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-all">
+                  <span className="text-3xl">🇻🇳</span>
+                </div>
+                <h3 className="text-2xl font-black text-gray-900 mb-2">Vietnam Packing Factory</h3>
+                <p className="text-sm text-gray-500 mb-4">Ho Minh City (3,000 m²)</p>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                 Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
+                </p>
+              </div>
             </div>
           </div>
 
