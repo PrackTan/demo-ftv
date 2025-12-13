@@ -311,7 +311,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 md:col-span-2">
+              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
                 <div className="relative w-8 h-8 md:w-10 md:h-10 bg-orange-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
                   <Factory className="w-4 h-4 md:w-5 md:h-5 text-white" />
                 </div>
