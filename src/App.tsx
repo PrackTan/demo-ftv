@@ -280,12 +280,11 @@ function App() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-100/50 via-transparent to-cyan-100/50 rounded-3xl blur-2xl"></div>
+            <div className="relative lg:scale-110">
               <img
                 src="/1.png"
                 alt="Manufacturing Operations"
-                className="relative w-full h-auto rounded-3xl shadow-2xl"
+                className="w-full h-auto"
               />
             </div>
 
