@@ -279,8 +279,8 @@ function App() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16 lg:mb-20">
-            <div className="relative order-2 lg:order-1 lg:scale-110">
+          <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 md:gap-12 items-start mb-12 md:mb-16 lg:mb-20">
+            <div className="relative order-2 lg:order-1">
               <img
                 src="/1.png"
                 alt="Manufacturing Operations"
@@ -288,7 +288,7 @@ function App() {
               />
             </div>
 
-            <div className="space-y-4 md:space-y-6 order-1 lg:order-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 order-1 lg:order-2">
               <div className="group relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
                 <div className="relative w-12 h-12 md:w-16 md:h-16 bg-teal-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
                   <Factory className="w-6 h-6 md:w-8 md:h-8 text-white" />
@@ -311,7 +311,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="group relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200">
+              <div className="group relative bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 md:col-span-2">
                 <div className="relative w-12 h-12 md:w-16 md:h-16 bg-orange-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform group-hover:scale-110 transition-all">
                   <Factory className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
