@@ -282,7 +282,7 @@ function App() {
           <div className="grid lg:grid-cols-[1.8fr_1fr] gap-6 md:gap-8 items-start mb-12 md:mb-16 lg:mb-20">
             <div className="relative order-2 lg:order-1">
               <img
-                src="/1.png"
+                src="/1 copy.png"
                 alt="Manufacturing Operations"
                 className="w-full h-auto"
               />
