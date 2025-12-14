@@ -24,7 +24,6 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { HexagonGrid } from './components/HexagonGrid';
-import { OperationsCards } from './components/OperationsCards';
 
 // SukiGroup Color Palette
 // Primary: Cool Gray (slate-600 to slate-700)
@@ -158,64 +157,82 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6 md:space-y-8">
-              <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-teal-200 px-4 py-2 rounded-full shadow-sm">
-                <Sparkles className="w-4 h-4 text-teal-600" />
-                <span className="text-sm font-bold text-teal-600">70+ Years of Excellence</span>
+              <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-green-200 px-4 py-2 rounded-full shadow-sm">
+                <div className="w-4 h-4 bg-green-600 rounded-sm flex items-center justify-center">
+                  <div className="w-2 h-2 bg-white rounded-full"></div>
+                </div>
+                <span className="text-sm font-bold text-gray-900">70+ Years of Excellence</span>
               </div>
 
               <div className="space-y-4 md:space-y-6">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 leading-none">
                   Asian Supply
                   <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-cyan-500 to-green-500">
+                  <span className="text-green-600">
                     Chain Gateway
                   </span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-xl">
-                  Connecting Asian manufacturing excellence to European markets through integrated sourcing, packaging, and logistics solutions backed by Suki Group heritage.
+                  Connecting Asian manufacturing excellence to European markets through integrated sourcing, packaging, and logistics solutions backed by Suki Group heritage.{' '}
+                  <button
+                    onClick={() => scrollToSection('about')}
+                    className="text-blue-600 hover:text-blue-700 underline font-medium"
+                  >
+                    Explore More
+                  </button>
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="group relative overflow-hidden bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:shadow-2xl hover:shadow-teal-500/30 transition-all duration-300 hover:scale-105"
-                >
-                  <span className="relative z-10 flex items-center justify-center space-x-2">
-                    <span>Start Partnership</span>
-                    <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                  </span>
-                </button>
-                <button
-                  onClick={() => scrollToSection('about')}
-                  className="border-2 border-teal-500 text-teal-600 px-6 md:px-8 py-3 md:py-4 rounded-2xl font-bold text-base md:text-lg hover:bg-teal-50 transition-all duration-300"
-                >
-                  Explore More
-                </button>
-              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 pt-4 md:pt-8">
+                <div className="group relative bg-white/95 backdrop-blur-md border-2 border-gray-200 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="flex items-start space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 tracking-tight">ASIA</h3>
+                      <p className="text-xs text-blue-600 font-medium mt-1">Operations Division</p>
+                    </div>
+                  </div>
+                  <ul className="space-y-2">
+                    {[
+                      'Role',
+                      'Regional Sourcing',
+                      'Local Manufacturing',
+                      'Market Expansion',
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center space-x-2">
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-sm text-gray-700 font-medium">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-              <div className="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-8">
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-teal-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
-                  <div className="relative bg-white/80 backdrop-blur-sm border border-teal-100 rounded-xl md:rounded-2xl p-3 md:p-4 shadow-sm">
-                    <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-cyan-600">70+</div>
-                    <div className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Years Heritage</div>
+                <div className="group relative bg-white/95 backdrop-blur-md border-2 border-gray-200 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="flex items-start space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                      <Globe2 className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 tracking-tight">EUROPE</h3>
+                      <p className="text-xs text-teal-600 font-medium mt-1">Operations Division</p>
+                    </div>
                   </div>
-                </div>
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
-                  <div className="relative bg-white/80 backdrop-blur-sm border border-green-100 rounded-xl md:rounded-2xl p-3 md:p-4 shadow-sm">
-                    <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-green-600 to-emerald-600">5K m²</div>
-                    <div className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Facility Size</div>
-                  </div>
-                </div>
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/30 to-transparent rounded-2xl blur group-hover:blur-xl transition-all"></div>
-                  <div className="relative bg-white/80 backdrop-blur-sm border border-cyan-100 rounded-xl md:rounded-2xl p-3 md:p-4 shadow-sm">
-                    <div className="text-2xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-600 to-blue-600">30+</div>
-                    <div className="text-[10px] md:text-xs text-gray-600 font-medium mt-1">Containers/Mo</div>
-                  </div>
+                  <ul className="space-y-2">
+                    {[
+                      'Sourcing & Procurement',
+                      'Logistics & Distribution',
+                      'Sales & Marketing',
+                      'Legal & Sustainability',
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center space-x-2">
+                        <div className="w-1.5 h-1.5 bg-teal-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-sm text-gray-700 font-medium">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -255,7 +272,6 @@ function App() {
           </div>
         </div>
 
-        <OperationsCards />
 
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
