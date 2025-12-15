@@ -2,16 +2,12 @@ import { useState, useEffect } from 'react';
 import {
   Menu,
   X,
-  ChevronRight,
   ArrowUpRight,
   Building2,
   Globe2,
   Package,
   Search,
   TestTube,
-  TrendingUp,
-  Shield,
-  Zap,
   Users,
   CheckCircle2,
   MapPin,
@@ -19,11 +15,8 @@ import {
   Truck,
   Award,
   Container,
-  Target,
-  Star,
-  Sparkles,
+  Sparkles
 } from 'lucide-react';
-import { HexagonGrid } from './components/HexagonGrid';
 
 // SukiGroup Color Palette
 // Primary: Cool Gray (slate-600 to slate-700)
@@ -237,36 +230,12 @@ function App() {
               </div>
             </div>
 
-            <div className="relative hidden lg:block w-full h-[600px]">
+            <div className="relative hidden lg:flex w-full h-[600px] items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-br from-teal-50/50 via-transparent to-cyan-50/50 rounded-3xl"></div>
-              <HexagonGrid
-                images={[
-                  'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/3.png',
-                  'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/4.png',
-                  'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  '/5.png',
-                  'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184634/pexels-photo-3184634.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3182759/pexels-photo-3182759.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184396/pexels-photo-3184396.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=400',
-                  'https://images.pexels.com/photos/3184413/pexels-photo-3184413.jpeg?auto=compress&cs=tinysrgb&w=400',
-                ]}
+              <img
+                src="/Group 2.png"
+                alt="Team hexagon collage"
+                className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
               />
             </div>
           </div>
@@ -276,108 +245,107 @@ function App() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      <section id="about" className="relative py-16 md:py-24 lg:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16 lg:mb-20">
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-teal-100 px-4 py-2 rounded-full mb-6">
-              <Star className="w-4 h-4 text-slate-600" />
-              <span className="text-sm font-bold text-slate-900">The FTV Asia Advantage</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-900 mb-4 md:mb-6 px-4">
+      <section id="about" className="relative py-16 md:py-24 lg:py-28 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-3">
               Suki Group Excellence
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-red-600">
-                in Asian Markets
-              </span>
+              <span className="text-[#c0392b]">in Asian Markets</span>
             </h2>
-            <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-              Strategic Asian subsidiary bringing 70+ years of European excellence to retail logistics, product solutions, and supply chain management
+            <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
+              Strategic Asian subsidiary bringing 70+ years of European excellence to retail logistics,
+              product solutions, and supply chain management
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-[1.8fr_1fr] gap-6 md:gap-8 items-start mb-12 md:mb-16 lg:mb-20">
-            <div className="relative order-2 lg:order-1">
-              <img
-                src="/banner1.png"
-                alt="Manufacturing Operations"
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-3 order-1 lg:order-2">
-              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
-                <div className="relative w-8 h-8 md:w-10 md:h-10 bg-teal-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
-                  <Factory className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                </div>
-                <h3 className="text-sm md:text-base font-black text-gray-900 mb-1">Vietnam Packing Factory</h3>
-                <p className="text-[10px] md:text-xs text-gray-500 mb-1.5">Ho Minh City (3,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-[10px] md:text-xs">
-                 Established in November 2011, is located in Bin Duang industrial zone, Ho chi Minh City (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
-                </p>
+          <div className="space-y-12 md:space-y-16">
+            {/* Row 1 */}
+            <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+              <div className="flex justify-center">
+                <img
+                  src="/hexagon-small.png"
+                  alt="Hexagon collage"
+                  className="w-full max-w-md"
+                />
               </div>
-
-              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
-                <div className="relative w-8 h-8 md:w-10 md:h-10 bg-teal-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
-                  <Package className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                </div>
-                <h3 className="text-sm md:text-base font-black text-gray-900 mb-1">Asia Sourcing & Buying Office</h3>
-                <p className="text-[10px] md:text-xs text-gray-500 mb-1.5">Shanghai, China (Founded Sep 2019)</p>
-                <p className="text-gray-600 leading-relaxed text-[10px] md:text-xs">
-                 Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and purchasing in Asia regions for sukigroup.
-                </p>
-              </div>
-
-              <div className="group relative bg-white rounded-lg md:rounded-xl p-3 md:p-4 hover:shadow-xl transition-all duration-500 hover:-translate-y-1 border border-gray-200">
-                <div className="relative w-8 h-8 md:w-10 md:h-10 bg-orange-500 rounded-md md:rounded-lg flex items-center justify-center mb-2 md:mb-3 transform group-hover:scale-110 transition-all">
-                  <Factory className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                </div>
-                <h3 className="text-sm md:text-base font-black text-gray-900 mb-1">China Packing Factory</h3>
-                <p className="text-[10px] md:text-xs text-gray-500 mb-1.5">Kunshan City, Jiausu (8,000 m²)</p>
-                <p className="text-gray-600 leading-relaxed text-[10px] md:text-xs">
-                 Established in December 201B, IS located in Halyan county, Jaing city (China), an area with over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang provnces.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white rounded-2xl md:rounded-3xl lg:rounded-[3rem] p-6 md:p-10 lg:p-12 overflow-hidden border-2 border-gray-200 shadow-lg">
-            <div className="absolute top-0 right-0 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
-
-            <div className="relative grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div>
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-black text-gray-900 mb-6 md:mb-8">Strategic Asian Presence</h3>
-                <div className="space-y-4 md:space-y-6">
-                  {[
-                    { icon: MapPin, title: 'Hong Kong HQ', desc: 'Strategic hub connecting East and West', color: 'teal' },
-                    { icon: Search, title: 'Shanghai Sourcing', desc: 'Market intelligence for fasteners, tools, adhesives', color: 'orange' },
-                    { icon: Factory, title: 'Packing Centers', desc: 'Jiaxing 5,000m² & Ho Chi Minh 30 containers/mo', color: 'cyan' },
-                  ].map((loc, idx) => (
-                    <div key={idx} className="flex items-start space-x-3 md:space-x-4 group">
-                      <div className={`w-10 h-10 md:w-12 md:h-12 bg-${loc.color}-100 rounded-lg md:rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                        <loc.icon className={`w-5 h-5 md:w-6 md:h-6 text-${loc.color}-600`} />
-                      </div>
-                      <div>
-                        <div className="text-base md:text-lg font-bold text-gray-900 mb-1">{loc.title}</div>
-                        <p className="text-gray-600 text-xs md:text-sm">{loc.desc}</p>
-                      </div>
+              <div className="group bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
+                <div className="flex items-start space-x-3 mb-3">
+                  <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center shadow-sm">
+                    <div className="relative w-6 h-6 bg-red-600 rounded-sm flex items-center justify-center">
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                     </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-3 md:gap-4">
-                {[
-                  { icon: Award, label: 'ISO Certified', color: 'teal' },
-                  { icon: Shield, label: 'BSCI', color: 'orange' },
-                  { icon: Globe2, label: 'Pan-European', color: 'cyan' },
-                  { icon: TrendingUp, label: 'Financial Stability', color: 'teal' },
-                ].map((cert, idx) => (
-                  <div key={idx} className="bg-white border border-gray-200 rounded-xl md:rounded-2xl p-4 md:p-6 hover:shadow-md transition-all group">
-                    <cert.icon className={`w-8 h-8 md:w-10 md:h-10 text-${cert.color}-600 mb-3 md:mb-4 group-hover:scale-110 transition-transform`} />
-                    <div className="text-sm md:text-base lg:text-lg font-bold text-gray-900">{cert.label}</div>
                   </div>
-                ))}
+                  <div>
+                    <h3 className="text-lg font-black text-gray-900 leading-tight">Vietnam Packing Factory</h3>
+                    <p className="text-xs text-gray-500">Ho Minh City (3,000 m²)</p>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Established in November 2011, is located in Bin Duang industrial zone, Ho Chi Minh City
+                  (Vietnam), dose to the main key local manufacturers of screws, bolts and washers.
+                </p>
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+              <div className="group bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all order-2 md:order-1">
+                <div className="flex items-start space-x-3 mb-3">
+                  <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center shadow-sm">
+                    <div className="relative w-6 h-6 bg-red-600 rounded-sm flex items-center justify-center">
+                      {/* Large star */}
+                      <div className="absolute top-0.5 left-1 w-1.5 h-1.5 bg-yellow-400 rounded-full"></div>
+                      {/* 4 smaller stars */}
+                      <div className="absolute top-1.5 right-0.5 w-1 h-1 bg-yellow-400 rounded-full"></div>
+                      <div className="absolute bottom-1 right-0.5 w-1 h-1 bg-yellow-400 rounded-full"></div>
+                      <div className="absolute bottom-0.5 left-1.5 w-1 h-1 bg-yellow-400 rounded-full"></div>
+                      <div className="absolute top-1 left-2.5 w-1 h-1 bg-yellow-400 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-black text-gray-900 leading-tight">Asia Sourcing & Buying Office</h3>
+                    <p className="text-xs text-gray-500">Shanghai, China (Founded Sep 2019)</p>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Founded in September 2019 and situated in the heart of Shanghai, spedalises in sourcing and
+                  purchasing in Asia regions for sukigroup.
+                </p>
+              </div>
+              <div className="flex justify-center order-1 md:order-2">
+                <img
+                  src="/hexagon-small.png"
+                  alt="Hexagon collage"
+                  className="w-full max-w-md"
+                />
+              </div>
+            </div>
+
+            {/* Row 3 */}
+            <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+              <div className="flex justify-center">
+                <img
+                  src="/hexagon-small.png"
+                  alt="Hexagon collage"
+                  className="w-full max-w-md"
+                />
+              </div>
+              <div className="group bg-white rounded-2xl p-5 md:p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
+                <div className="flex items-start space-x-3 mb-3">
+                  <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center shadow-sm">
+                    <Building2 className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-black text-gray-900 leading-tight">China Packing Factory</h3>
+                    <p className="text-xs text-gray-500">Kunshan City, Jiausu (8,000 m²)</p>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Established in December 2018, IS located in Halyan county, Jaing city (China), an area with
+                  over 2000 fasteners factories nearby and close to hardware factones in Jangsu and Zhejlang
+                  provnces.
+                </p>
               </div>
             </div>
           </div>
