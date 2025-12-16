@@ -140,7 +140,7 @@ function App() {
         )}
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20 pb-40 md:pb-80">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden pt-20 md:pb-12">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-br from-teal-200/40 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-tr from-cyan-200/40 to-transparent rounded-full blur-3xl"></div>
@@ -242,10 +242,10 @@ function App() {
         </div>
 
 
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      <section id="about" className="relative py-16 md:py-24 lg:py-28 bg-white">
+      <section id="about" className="relative py-10 md:py-14 lg:py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-3">
@@ -352,7 +352,7 @@ function App() {
         </div>
       </section>
 
-      <section id="services" className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section id="services" className="py-10 md:py-14 lg:py-16 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-100 to-slate-100 px-4 py-2 rounded-full mb-6">
@@ -445,7 +445,7 @@ function App() {
         </div>
       </section>
 
-      <section id="solutions" className="py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-100 via-gray-50 to-white relative overflow-hidden">
+      <section id="solutions" className="py-10 md:py-14 lg:py-16 bg-gradient-to-br from-gray-100 via-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgwLDAsMCwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-40"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -509,7 +509,7 @@ function App() {
         </div>
       </section>
 
-      <section id="network" className="py-16 md:py-24 lg:py-32 bg-white">
+      <section id="network" className="py-10 md:py-14 lg:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 lg:mb-20">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-100 to-teal-100 px-4 py-2 rounded-full mb-6">
@@ -550,7 +550,7 @@ function App() {
       </section>
 
      
-      <section id="contact" className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden">
+      <section id="contact" className="relative py-10 md:py-14 lg:py-16 bg-gradient-to-br from-gray-50 via-white to-teal-50 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-br from-teal-200/30 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-tr from-cyan-200/30 to-transparent rounded-full blur-3xl"></div>
